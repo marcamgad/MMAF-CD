@@ -1,0 +1,18 @@
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+Method & Dice & Pointing & Energy in mask & Box$\to$MedSAM \\
+\midrule
+Grad-CAM & 0.141 & 0.325 & 0.199 & 0.143 \\
+Grad-CAM++ & 0.149 & 0.270 & 0.181 & 0.158 \\
+Grad-CAM++ (thesis code) & 0.131 & 0.265 & 0.194 & 0.134 \\
+LayerCAM (stage 3) & 0.047 & 0.325 & 0.246 & 0.053 \\
+EigenCAM & 0.332 & 0.503 & 0.353 & 0.345 \\
+Score-CAM & 0.334 & 0.398 & 0.225 & 0.377 \\
+Integrated Gradients & 0.079 & 0.293 & 0.252 & 0.088 \\
+RISE & 0.155 & 0.140 & 0.139 & 0.224 \\
+random & 0.189 & 0.108 & 0.157 & 0.280 \\
+\midrule
+chance (lesion area) & -- & -- & 0.157 & -- \\
+GT box $\to$ MedSAM (upper bound) & -- & -- & -- & 0.776 \\
+\bottomrule
+\end{tabular}

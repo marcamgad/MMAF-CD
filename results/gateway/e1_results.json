@@ -1,0 +1,835 @@
+{
+ "train_log": [
+  {
+   "epoch": 0,
+   "loss": 2.266108122507731,
+   "organ": 1.1745945231119792,
+   "sub": 0.8699767860571543,
+   "adv": 0.6565252095858256,
+   "val_macro_src_acc": 0.9127304964539007,
+   "sec": 774.9097740650177
+  },
+  {
+   "epoch": 1,
+   "loss": 1.8903512490590413,
+   "organ": 0.8340057223637899,
+   "sub": 0.7262923990488053,
+   "adv": 0.6931993275086085,
+   "val_macro_src_acc": 0.9229863221884498,
+   "sec": 631.0554420948029
+  },
+  {
+   "epoch": 2,
+   "loss": 1.835437420686086,
+   "organ": 0.7265451771418253,
+   "sub": 0.6394975212812424,
+   "adv": 0.7891434837182363,
+   "val_macro_src_acc": 0.9472543059777102,
+   "sec": 579.1833670139313
+  },
+  {
+   "epoch": 3,
+   "loss": 1.7354170772234598,
+   "organ": 0.6630375077724456,
+   "sub": 0.5564542641639709,
+   "adv": 0.7941524343093236,
+   "val_macro_src_acc": 0.9625278622087131,
+   "sec": 601.3178813457489
+  },
+  {
+   "epoch": 4,
+   "loss": 1.659681409517924,
+   "organ": 0.6397494884332021,
+   "sub": 0.4994798381725947,
+   "adv": 0.7701920043627422,
+   "val_macro_src_acc": 0.9706686930091184,
+   "sec": 635.7369248867035
+  },
+  {
+   "epoch": 5,
+   "loss": 1.6175713574091592,
+   "organ": 0.6267314705053966,
+   "sub": 0.45260718764861424,
+   "adv": 0.7645362950166067,
+   "val_macro_src_acc": 0.9720060790273557,
+   "sec": 621.6946740150452
+  },
+  {
+   "epoch": 6,
+   "loss": 1.5978475642204284,
+   "organ": 0.6138520913918813,
+   "sub": 0.4225099794268608,
+   "adv": 0.7727404820919037,
+   "val_macro_src_acc": 0.9705775075987841,
+   "sec": 550.7673771381378
+  },
+  {
+   "epoch": 7,
+   "loss": 1.5622123306592306,
+   "organ": 0.6102024439175924,
+   "sub": 0.3869030189613501,
+   "adv": 0.7585583792527517,
+   "val_macro_src_acc": 0.9708156028368793,
+   "sec": 536.7643311023712
+  },
+  {
+   "epoch": 8,
+   "loss": 1.5422240125338236,
+   "organ": 0.6015627031326294,
+   "sub": 0.3684606734911601,
+   "adv": 0.7564309723377228,
+   "val_macro_src_acc": 0.9747619047619046,
+   "sec": 540.5554239749908
+  },
+  {
+   "epoch": 9,
+   "loss": 1.5331268181800843,
+   "organ": 0.5993380336761475,
+   "sub": 0.35058549387256305,
+   "adv": 0.7584960355758666,
+   "val_macro_src_acc": 0.9742857142857142,
+   "sec": 531.6231052875519
+  },
+  {
+   "epoch": 10,
+   "loss": 1.5137181728680928,
+   "organ": 0.5942300684452057,
+   "sub": 0.3237549788753192,
+   "adv": 0.7576106135845184,
+   "val_macro_src_acc": 0.9742857142857142,
+   "sec": 531.9408450126648
+  },
+  {
+   "epoch": 11,
+   "loss": 1.5092047293980917,
+   "organ": 0.5927320455710093,
+   "sub": 0.31890463078022,
+   "adv": 0.7570203703244527,
+   "val_macro_src_acc": 0.9754761904761905,
+   "sec": 538.6792936325073
+  },
+  {
+   "epoch": 12,
+   "loss": 1.4982423680623373,
+   "organ": 0.5907284101645152,
+   "sub": 0.3086083748340607,
+   "adv": 0.7532097688515981,
+   "val_macro_src_acc": 0.9747619047619047,
+   "sec": 535.4893288612366
+  },
+  {
+   "epoch": 13,
+   "loss": 1.4947013098398845,
+   "organ": 0.5918391224543254,
+   "sub": 0.30432798360784846,
+   "adv": 0.7506981964906057,
+   "val_macro_src_acc": 0.9747619047619047,
+   "sec": 506.80238032341003
+  }
+ ],
+ "best_val": 0.9754761904761905,
+ "organ_T": 0.5447394000098387,
+ "route_qhat": 0.0028644800186157227,
+ "sets": {
+  "external:c-nmc:blood": {
+   "old": {
+    "n": 195,
+    "acc": 0.0,
+    "flagged": 0.8205128205128205,
+    "silent_misroute": 0.1794871794871795,
+    "set_cov": 0.0,
+    "set_size": 1.3128205128205128,
+    "singleton": 0.6923076923076923
+   },
+   "new": {
+    "n": 195,
+    "acc": 1.0,
+    "flagged": 0.0,
+    "silent_misroute": 0.0,
+    "set_cov": 1.0,
+    "set_size": 1.0,
+    "singleton": 1.0
+   }
+  },
+  "external:cbis_roi:breast": {
+   "old": {
+    "n": 1017,
+    "acc": 0.4110127826941986,
+    "flagged": 0.7876106194690266,
+    "silent_misroute": 0.12291052114060963,
+    "set_cov": 0.6922320550639135,
+    "set_size": 1.7620452310717798,
+    "singleton": 0.35398230088495575
+   },
+   "new": {
+    "n": 1017,
+    "acc": 1.0,
+    "flagged": 0.0,
+    "silent_misroute": 0.0,
+    "set_cov": 1.0,
+    "set_size": 1.0,
+    "singleton": 1.0
+   }
+  },
+  "external:crc-val-he-7k:colon": {
+   "old": {
+    "n": 563,
+    "acc": 0.03197158081705151,
+    "flagged": 0.36589698046181174,
+    "silent_misroute": 0.6305506216696269,
+    "set_cov": 0.0941385435168739,
+    "set_size": 1.3268206039076376,
+    "singleton": 0.6927175843694494
+   },
+   "new": {
+    "n": 563,
+    "acc": 1.0,
+    "flagged": 0.0,
+    "silent_misroute": 0.0,
+    "set_cov": 1.0,
+    "set_size": 1.0,
+    "singleton": 1.0
+   }
+  },
+  "external:ddti:thyroid": {
+   "old": {
+    "n": 81,
+    "acc": 0.8518518518518519,
+    "flagged": 0.8024691358024691,
+    "silent_misroute": 0.012345679012345678,
+    "set_cov": 0.9876543209876543,
+    "set_size": 1.691358024691358,
+    "singleton": 0.32098765432098764
+   },
+   "new": {
+    "n": 81,
+    "acc": 1.0,
+    "flagged": 0.0,
+    "silent_misroute": 0.0,
+    "set_cov": 1.0,
+    "set_size": 1.0,
+    "singleton": 1.0
+   }
+  },
+  "external:edd2020:esophageal": {
+   "old": {
+    "n": 53,
+    "acc": 0.9811320754716981,
+    "flagged": 0.09433962264150944,
+    "silent_misroute": 0.0,
+    "set_cov": 1.0,
+    "set_size": 1.0566037735849056,
+    "singleton": 0.9622641509433962
+   },
+   "new": {
+    "n": 53,
+    "acc": 1.0,
+    "flagged": 0.0,
+    "silent_misroute": 0.0,
+    "set_cov": 1.0,
+    "set_size": 1.0,
+    "singleton": 1.0
+   }
+  },
+  "external:kits23:kidney": {
+   "old": {
+    "n": 384,
+    "acc": 0.4036458333333333,
+    "flagged": 0.3203125,
+    "silent_misroute": 0.4791666666666667,
+    "set_cov": 0.515625,
+    "set_size": 1.3776041666666667,
+    "singleton": 0.6458333333333334
+   },
+   "new": {
+    "n": 384,
+    "acc": 1.0,
+    "flagged": 0.0026041666666666665,
+    "silent_misroute": 0.0,
+    "set_cov": 1.0,
+    "set_size": 1.0,
+    "singleton": 1.0
+   }
+  },
+  "external:lbc:cervical": {
+   "old": {
+    "n": 299,
+    "acc": 0.9632107023411371,
+    "flagged": 0.09698996655518395,
+    "silent_misroute": 0.006688963210702341,
+    "set_cov": 0.979933110367893,
+    "set_size": 1.0535117056856187,
+    "singleton": 0.9531772575250836
+   },
+   "new": {
+    "n": 299,
+    "acc": 1.0,
+    "flagged": 0.0,
+    "silent_misroute": 0.0,
+    "set_cov": 1.0,
+    "set_size": 1.0,
+    "singleton": 1.0
+   }
+  },
+  "HOLDOUT external:lunghist700:lung": {
+   "old": {
+    "n": 431,
+    "acc": 0.002320185614849188,
+    "flagged": 0.08352668213457076,
+    "silent_misroute": 0.9164733178654292,
+    "set_cov": 0.0069605568445475635,
+    "set_size": 1.0812064965197217,
+    "singleton": 0.9187935034802784
+   },
+   "new": {
+    "n": 431,
+    "acc": 0.0,
+    "flagged": 0.04408352668213457,
+    "silent_misroute": 0.9559164733178654,
+    "set_cov": 0.0,
+    "set_size": 1.0,
+    "singleton": 1.0
+   }
+  },
+  "external:nih:pancreatic": {
+   "old": {
+    "n": 58,
+    "acc": 0.3620689655172414,
+    "flagged": 0.41379310344827586,
+    "silent_misroute": 0.5517241379310345,
+    "set_cov": 0.4482758620689655,
+    "set_size": 1.4482758620689655,
+    "singleton": 0.5517241379310345
+   },
+   "new": {
+    "n": 58,
+    "acc": 1.0,
+    "flagged": 0.034482758620689655,
+    "silent_misroute": 0.0,
+    "set_cov": 1.0,
+    "set_size": 1.0,
+    "singleton": 1.0
+   }
+  },
+  "HOLDOUT external:oral:oral": {
+   "old": {
+    "n": 1200,
+    "acc": 0.9975,
+    "flagged": 0.0075,
+    "silent_misroute": 0.0,
+    "set_cov": 1.0,
+    "set_size": 1.0066666666666666,
+    "singleton": 0.9933333333333333
+   },
+   "new": {
+    "n": 1200,
+    "acc": 0.9983333333333333,
+    "flagged": 0.0016666666666666668,
+    "silent_misroute": 0.0,
+    "set_cov": 0.9983333333333333,
+    "set_size": 1.0,
+    "singleton": 1.0
+   }
+  },
+  "external:ovarian:ovarian": {
+   "old": {
+    "n": 126,
+    "acc": 0.753968253968254,
+    "flagged": 0.31746031746031744,
+    "silent_misroute": 0.09523809523809523,
+    "set_cov": 0.8412698412698413,
+    "set_size": 1.2936507936507937,
+    "singleton": 0.7222222222222222
+   },
+   "new": {
+    "n": 126,
+    "acc": 0.9920634920634921,
+    "flagged": 0.007936507936507936,
+    "silent_misroute": 0.0,
+    "set_cov": 0.9920634920634921,
+    "set_size": 1.0,
+    "singleton": 1.0
+   }
+  },
+  "external:pad-ufes-20:skin": {
+   "old": {
+    "n": 661,
+    "acc": 0.8366111951588502,
+    "flagged": 0.3161875945537065,
+    "silent_misroute": 0.0529500756429652,
+    "set_cov": 0.9122541603630863,
+    "set_size": 1.2934947049924357,
+    "singleton": 0.7291981845688351
+   },
+   "new": {
+    "n": 661,
+    "acc": 0.9984871406959153,
+    "flagged": 0.0045385779122541605,
+    "silent_misroute": 0.0015128593040847202,
+    "set_cov": 0.9984871406959153,
+    "set_size": 1.0,
+    "singleton": 1.0
+   }
+  },
+  "HOLDOUT external:pmram:brain_2d": {
+   "old": {
+    "n": 998,
+    "acc": 0.9328657314629258,
+    "flagged": 0.1312625250501002,
+    "silent_misroute": 0.008016032064128256,
+    "set_cov": 0.9729458917835672,
+    "set_size": 1.129258517034068,
+    "singleton": 0.8797595190380761
+   },
+   "new": {
+    "n": 998,
+    "acc": 0.9649298597194389,
+    "flagged": 0.023046092184368736,
+    "silent_misroute": 0.028056112224448898,
+    "set_cov": 0.9649298597194389,
+    "set_size": 1.0,
+    "singleton": 1.0
+   }
+  },
+  "extra:isic2018:skin": {
+   "old": {
+    "n": 922,
+    "acc": 0.9783080260303688,
+    "flagged": 0.06182212581344902,
+    "silent_misroute": 0.0021691973969631237,
+    "set_cov": 0.9924078091106291,
+    "set_size": 1.0401301518438177,
+    "singleton": 0.9598698481561823
+   },
+   "new": {
+    "n": 922,
+    "acc": 0.9967462039045553,
+    "flagged": 0.0010845986984815619,
+    "silent_misroute": 0.0021691973969631237,
+    "set_cov": 0.9967462039045553,
+    "set_size": 1.0,
+    "singleton": 1.0
+   }
+  },
+  "extra:tn3k:thyroid": {
+   "old": {
+    "n": 353,
+    "acc": 1.0,
+    "flagged": 0.20396600566572237,
+    "silent_misroute": 0.0,
+    "set_cov": 1.0,
+    "set_size": 1.3796033994334278,
+    "singleton": 0.6203966005665722
+   },
+   "new": {
+    "n": 353,
+    "acc": 1.0,
+    "flagged": 0.0084985835694051,
+    "silent_misroute": 0.0,
+    "set_cov": 1.0,
+    "set_size": 1.0,
+    "singleton": 1.0
+   }
+  },
+  "internal:internal:bladder": {
+   "old": {
+    "n": 249,
+    "acc": 1.0,
+    "flagged": 0.0,
+    "silent_misroute": 0.0,
+    "set_cov": 1.0,
+    "set_size": 1.0160642570281124,
+    "singleton": 0.9839357429718876
+   },
+   "new": {
+    "n": 249,
+    "acc": 1.0,
+    "flagged": 0.0,
+    "silent_misroute": 0.0,
+    "set_cov": 1.0,
+    "set_size": 1.0,
+    "singleton": 1.0
+   }
+  },
+  "internal:internal:blood": {
+   "old": {
+    "n": 1200,
+    "acc": 1.0,
+    "flagged": 0.0,
+    "silent_misroute": 0.0,
+    "set_cov": 1.0,
+    "set_size": 1.0,
+    "singleton": 1.0
+   },
+   "new": {
+    "n": 1200,
+    "acc": 1.0,
+    "flagged": 0.0,
+    "silent_misroute": 0.0,
+    "set_cov": 1.0,
+    "set_size": 1.0,
+    "singleton": 1.0
+   }
+  },
+  "internal:internal:brain_2d": {
+   "old": {
+    "n": 1073,
+    "acc": 1.0,
+    "flagged": 0.003727865796831314,
+    "silent_misroute": 0.0,
+    "set_cov": 1.0,
+    "set_size": 1.0279589934762348,
+    "singleton": 0.9720410065237651
+   },
+   "new": {
+    "n": 1073,
+    "acc": 1.0,
+    "flagged": 0.0,
+    "silent_misroute": 0.0,
+    "set_cov": 1.0,
+    "set_size": 1.0,
+    "singleton": 1.0
+   }
+  },
+  "internal:internal:breast": {
+   "old": {
+    "n": 1200,
+    "acc": 0.9808333333333333,
+    "flagged": 0.0575,
+    "silent_misroute": 0.011666666666666667,
+    "set_cov": 0.9891666666666666,
+    "set_size": 1.1066666666666667,
+    "singleton": 0.895
+   },
+   "new": {
+    "n": 1200,
+    "acc": 0.9733333333333334,
+    "flagged": 0.020833333333333332,
+    "silent_misroute": 0.02,
+    "set_cov": 0.9733333333333334,
+    "set_size": 1.0,
+    "singleton": 1.0
+   }
+  },
+  "internal:internal:cervical": {
+   "old": {
+    "n": 1200,
+    "acc": 1.0,
+    "flagged": 0.0,
+    "silent_misroute": 0.0,
+    "set_cov": 1.0,
+    "set_size": 1.0,
+    "singleton": 1.0
+   },
+   "new": {
+    "n": 1200,
+    "acc": 1.0,
+    "flagged": 0.0,
+    "silent_misroute": 0.0,
+    "set_cov": 1.0,
+    "set_size": 1.0,
+    "singleton": 1.0
+   }
+  },
+  "internal:internal:colon": {
+   "old": {
+    "n": 1200,
+    "acc": 1.0,
+    "flagged": 0.0,
+    "silent_misroute": 0.0,
+    "set_cov": 1.0,
+    "set_size": 1.0,
+    "singleton": 1.0
+   },
+   "new": {
+    "n": 1200,
+    "acc": 0.9991666666666666,
+    "flagged": 0.0008333333333333334,
+    "silent_misroute": 0.0,
+    "set_cov": 0.9991666666666666,
+    "set_size": 1.0,
+    "singleton": 1.0
+   }
+  },
+  "internal:internal:esophageal": {
+   "old": {
+    "n": 1200,
+    "acc": 1.0,
+    "flagged": 0.0008333333333333334,
+    "silent_misroute": 0.0,
+    "set_cov": 1.0,
+    "set_size": 1.0008333333333332,
+    "singleton": 0.9991666666666666
+   },
+   "new": {
+    "n": 1200,
+    "acc": 1.0,
+    "flagged": 0.0,
+    "silent_misroute": 0.0,
+    "set_cov": 1.0,
+    "set_size": 1.0,
+    "singleton": 1.0
+   }
+  },
+  "internal:internal:gastric": {
+   "old": {
+    "n": 1200,
+    "acc": 0.9841666666666666,
+    "flagged": 0.034166666666666665,
+    "silent_misroute": 0.005833333333333334,
+    "set_cov": 0.9933333333333333,
+    "set_size": 1.0366666666666666,
+    "singleton": 0.9633333333333334
+   },
+   "new": {
+    "n": 1200,
+    "acc": 0.9933333333333333,
+    "flagged": 0.004166666666666667,
+    "silent_misroute": 0.004166666666666667,
+    "set_cov": 0.9933333333333333,
+    "set_size": 1.0,
+    "singleton": 1.0
+   }
+  },
+  "internal:internal:kidney": {
+   "old": {
+    "n": 1200,
+    "acc": 1.0,
+    "flagged": 0.11083333333333334,
+    "silent_misroute": 0.0,
+    "set_cov": 1.0,
+    "set_size": 1.1825,
+    "singleton": 0.8175
+   },
+   "new": {
+    "n": 1200,
+    "acc": 1.0,
+    "flagged": 0.0,
+    "silent_misroute": 0.0,
+    "set_cov": 1.0,
+    "set_size": 1.0,
+    "singleton": 1.0
+   }
+  },
+  "internal:internal:lung": {
+   "old": {
+    "n": 1200,
+    "acc": 1.0,
+    "flagged": 0.0033333333333333335,
+    "silent_misroute": 0.0,
+    "set_cov": 1.0,
+    "set_size": 1.0033333333333334,
+    "singleton": 0.9966666666666667
+   },
+   "new": {
+    "n": 1200,
+    "acc": 1.0,
+    "flagged": 0.0,
+    "silent_misroute": 0.0,
+    "set_cov": 1.0,
+    "set_size": 1.0,
+    "singleton": 1.0
+   }
+  },
+  "internal:internal:lymphoma": {
+   "old": {
+    "n": 1200,
+    "acc": 1.0,
+    "flagged": 0.0,
+    "silent_misroute": 0.0,
+    "set_cov": 1.0,
+    "set_size": 1.0,
+    "singleton": 1.0
+   },
+   "new": {
+    "n": 1200,
+    "acc": 1.0,
+    "flagged": 0.0,
+    "silent_misroute": 0.0,
+    "set_cov": 1.0,
+    "set_size": 1.0,
+    "singleton": 1.0
+   }
+  },
+  "internal:internal:oral": {
+   "old": {
+    "n": 1200,
+    "acc": 1.0,
+    "flagged": 0.0,
+    "silent_misroute": 0.0,
+    "set_cov": 1.0,
+    "set_size": 1.0,
+    "singleton": 1.0
+   },
+   "new": {
+    "n": 1200,
+    "acc": 1.0,
+    "flagged": 0.0,
+    "silent_misroute": 0.0,
+    "set_cov": 1.0,
+    "set_size": 1.0,
+    "singleton": 1.0
+   }
+  },
+  "internal:internal:ovarian": {
+   "old": {
+    "n": 1200,
+    "acc": 0.9616666666666667,
+    "flagged": 0.059166666666666666,
+    "silent_misroute": 0.015833333333333335,
+    "set_cov": 0.9825,
+    "set_size": 1.0641666666666667,
+    "singleton": 0.94
+   },
+   "new": {
+    "n": 1200,
+    "acc": 0.9708333333333333,
+    "flagged": 0.018333333333333333,
+    "silent_misroute": 0.018333333333333333,
+    "set_cov": 0.9708333333333333,
+    "set_size": 1.0,
+    "singleton": 1.0
+   }
+  },
+  "internal:internal:pancreatic": {
+   "old": {
+    "n": 5,
+    "acc": 1.0,
+    "flagged": 0.0,
+    "silent_misroute": 0.0,
+    "set_cov": 1.0,
+    "set_size": 1.0,
+    "singleton": 1.0
+   },
+   "new": {
+    "n": 5,
+    "acc": 1.0,
+    "flagged": 0.0,
+    "silent_misroute": 0.0,
+    "set_cov": 1.0,
+    "set_size": 1.0,
+    "singleton": 1.0
+   }
+  },
+  "internal:internal:skin": {
+   "old": {
+    "n": 1200,
+    "acc": 0.9991666666666666,
+    "flagged": 0.0016666666666666668,
+    "silent_misroute": 0.0,
+    "set_cov": 1.0,
+    "set_size": 1.0016666666666667,
+    "singleton": 0.9983333333333333
+   },
+   "new": {
+    "n": 1200,
+    "acc": 1.0,
+    "flagged": 0.0016666666666666668,
+    "silent_misroute": 0.0,
+    "set_cov": 1.0,
+    "set_size": 1.0,
+    "singleton": 1.0
+   }
+  },
+  "internal:internal:thyroid": {
+   "old": {
+    "n": 166,
+    "acc": 1.0,
+    "flagged": 0.21084337349397592,
+    "silent_misroute": 0.0,
+    "set_cov": 1.0,
+    "set_size": 1.3433734939759037,
+    "singleton": 0.6566265060240963
+   },
+   "new": {
+    "n": 166,
+    "acc": 1.0,
+    "flagged": 0.006024096385542169,
+    "silent_misroute": 0.0,
+    "set_cov": 1.0,
+    "set_size": 1.0,
+    "singleton": 1.0
+   }
+  }
+ },
+ "probe": {
+  "blood": {
+   "n_sources": 2,
+   "chance": 0.5,
+   "old": 1.0,
+   "new": 1.0
+  },
+  "brain_2d": {
+   "n_sources": 2,
+   "chance": 0.5,
+   "old": 0.9239999999999998,
+   "new": 0.9099999999999999
+  },
+  "breast": {
+   "n_sources": 2,
+   "chance": 0.5,
+   "old": 0.99,
+   "new": 0.9880000000000001
+  },
+  "cervical": {
+   "n_sources": 2,
+   "chance": 0.5,
+   "old": 0.974,
+   "new": 0.9960000000000001
+  },
+  "colon": {
+   "n_sources": 2,
+   "chance": 0.5,
+   "old": 1.0,
+   "new": 1.0
+  },
+  "esophageal": {
+   "n_sources": 2,
+   "chance": 0.5,
+   "old": 0.9174285714285715,
+   "new": 0.8583736263736264
+  },
+  "kidney": {
+   "n_sources": 2,
+   "chance": 0.5,
+   "old": 0.978,
+   "new": 0.998
+  },
+  "lung": {
+   "n_sources": 2,
+   "chance": 0.5,
+   "old": 0.998,
+   "new": 1.0
+  },
+  "oral": {
+   "n_sources": 2,
+   "chance": 0.5,
+   "old": 0.914,
+   "new": 0.882
+  },
+  "ovarian": {
+   "n_sources": 2,
+   "chance": 0.5,
+   "old": 0.8841344537815127,
+   "new": 0.9285210084033613
+  },
+  "pancreatic": {
+   "n_sources": 2,
+   "chance": 0.5,
+   "old": 1.0,
+   "new": 0.95
+  },
+  "skin": {
+   "n_sources": 3,
+   "chance": 0.3333333333333333,
+   "old": 0.8720000000000001,
+   "new": 0.9013333333333333
+  },
+  "thyroid": {
+   "n_sources": 3,
+   "chance": 0.3333333333333333,
+   "old": 0.5958787878787879,
+   "new": 0.588
+  }
+ }
+}

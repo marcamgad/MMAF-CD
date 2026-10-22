@@ -1,0 +1,4590 @@
+{
+ "meta": {
+  "table": "/kaggle/input/datasets/marcyoussef22/mmaf-v25-e2/e_out/e_table.csv",
+  "gateway": "/kaggle/input/datasets/marcyoussef22/mmaf-v25-e1/gateway_v25.pth",
+  "specialists": {
+   "bladder": {
+    "T": 1.786492513948441,
+    "q": 0.8082606792449951,
+    "w": 0.0,
+    "stage": "E2",
+    "path": "/kaggle/input/datasets/marcyoussef22/mmaf-v25-e2/mmaf_v25_E2/spec_v25/bladder.pth"
+   },
+   "blood": {
+    "T": 0.5348853908693592,
+    "q": 0.0002925992012023926,
+    "w": 0.0,
+    "stage": "E2",
+    "path": "/kaggle/input/datasets/marcyoussef22/mmaf-v25-e2/mmaf_v25_E2/spec_v25/blood.pth"
+   },
+   "brain_2d": {
+    "T": 0.5804425307622897,
+    "q": 0.0008488893508911133,
+    "w": 0.0,
+    "stage": "E2",
+    "path": "/kaggle/input/datasets/marcyoussef22/mmaf-v25-e2/mmaf_v25_E2/spec_v25/brain_2d.pth"
+   },
+   "breast": {
+    "T": 0.9975357640224023,
+    "q": 0.2979215383529663,
+    "w": 0.0,
+    "stage": "E2",
+    "path": "/kaggle/input/datasets/marcyoussef22/mmaf-v25-e2/mmaf_v25_E2/spec_v25/breast.pth"
+   },
+   "cervical": {
+    "T": 0.31470751256549057,
+    "q": 2.384185791015625e-07,
+    "w": 0.0,
+    "stage": "E2",
+    "path": "/kaggle/input/datasets/marcyoussef22/mmaf-v25-e2/mmaf_v25_E2/spec_v25/cervical.pth"
+   },
+   "colon": {
+    "T": 0.3000724591860435,
+    "q": 7.152557373046875e-07,
+    "w": 0.0,
+    "stage": "E2",
+    "path": "/kaggle/input/datasets/marcyoussef22/mmaf-v25-e2/mmaf_v25_E2/spec_v25/colon.pth"
+   },
+   "esophageal": {
+    "T": 0.3000036107529056,
+    "q": 1.5497207641601562e-06,
+    "w": 0.0,
+    "stage": "E2",
+    "path": "/kaggle/input/datasets/marcyoussef22/mmaf-v25-e2/mmaf_v25_E2/spec_v25/esophageal.pth"
+   },
+   "gastric": {
+    "T": 0.9914531830562023,
+    "q": 0.8758447170257568,
+    "w": 0.25,
+    "stage": "E2",
+    "path": "/kaggle/input/datasets/marcyoussef22/mmaf-v25-e2/mmaf_v25_E2/spec_v25/gastric.pth"
+   },
+   "kidney": {
+    "T": 1.669863389926575,
+    "q": 0.613862156867981,
+    "w": 0.0,
+    "stage": "E2",
+    "path": "/kaggle/input/datasets/marcyoussef22/mmaf-v25-e2/mmaf_v25_E2/spec_v25/kidney.pth"
+   },
+   "lung": {
+    "T": 0.5246933470093819,
+    "q": 0.00031256675720214844,
+    "w": 0.0,
+    "stage": "E2",
+    "path": "/kaggle/input/datasets/marcyoussef22/mmaf-v25-e2/mmaf_v25_E2/spec_v25/lung.pth"
+   },
+   "lymphoma": {
+    "T": 0.30000392207706084,
+    "q": 4.76837158203125e-07,
+    "w": 0.0,
+    "stage": "E2",
+    "path": "/kaggle/input/datasets/marcyoussef22/mmaf-v25-e2/mmaf_v25_E2/spec_v25/lymphoma.pth"
+   },
+   "oral": {
+    "T": 0.6653469755347171,
+    "q": 0.007704257965087891,
+    "w": 0.5,
+    "stage": "E2",
+    "path": "/kaggle/input/datasets/marcyoussef22/mmaf-v25-e2/mmaf_v25_E2/spec_v25/oral.pth"
+   },
+   "ovarian": {
+    "T": 0.9564377858715095,
+    "q": 0.8121058344841003,
+    "w": 0.25,
+    "stage": "E2",
+    "path": "/kaggle/input/datasets/marcyoussef22/mmaf-v25-e2/mmaf_v25_E2/spec_v25/ovarian.pth"
+   },
+   "pancreatic": {
+    "T": 2.525900029828266,
+    "q": 0.7273159623146057,
+    "w": 0.0,
+    "stage": "E2P",
+    "path": "/kaggle/input/datasets/marcyoussef22/mmaf-v25-e2p/e_out/spec_v25/pancreatic.pth"
+   },
+   "skin": {
+    "T": 1.0178471554039803,
+    "q": 0.3911781311035156,
+    "w": 0.25,
+    "stage": "E2",
+    "path": "/kaggle/input/datasets/marcyoussef22/mmaf-v25-e2/mmaf_v25_E2/spec_v25/skin.pth"
+   },
+   "thyroid": {
+    "T": 2.0766357993037894,
+    "q": 0.730459451675415,
+    "w": 0.0,
+    "stage": "E2",
+    "path": "/kaggle/input/datasets/marcyoussef22/mmaf-v25-e2/mmaf_v25_E2/spec_v25/thyroid.pth"
+   }
+  },
+  "guard_clusters": 27,
+  "guard_thresholds": {
+   "maha95": 723.597557172274,
+   "energy95": -4.086825847625732,
+   "maha975": 971.7569431029053,
+   "energy975": -3.9303057193756104
+  },
+  "guard_val_flag_combined": 0.034715750232991616,
+  "elapsed_h": 0.9382652436362372
+ },
+ "sets": {
+  "external:c-nmc:blood": {
+   "old": {
+    "n": 195,
+    "route_acc": 0.0,
+    "flagged": 0.8205128205128205,
+    "silent_misroute": 0.1794871794871795,
+    "n_labelled": 195,
+    "acc_all": 0.0,
+    "acc_accepted": 0.0,
+    "silent_error": 0.1794871794871795,
+    "e2e_bal_acc": 0.0
+   },
+   "new": {
+    "gate": {
+     "n": 195,
+     "route_acc": 1.0,
+     "flagged": 0.0,
+     "silent_misroute": 0.0,
+     "n_labelled": 195,
+     "acc_all": 0.8461538461538461,
+     "acc_accepted": 0.8461538461538461,
+     "silent_error": 0.15384615384615385,
+     "e2e_bal_acc": 0.845771457337025
+    },
+    "maha": {
+     "n": 195,
+     "route_acc": 1.0,
+     "flagged": 0.13333333333333333,
+     "silent_misroute": 0.0,
+     "n_labelled": 195,
+     "acc_all": 0.8461538461538461,
+     "acc_accepted": 0.8402366863905325,
+     "silent_error": 0.13846153846153847,
+     "e2e_bal_acc": 0.7121193053108482
+    },
+    "energy": {
+     "n": 195,
+     "route_acc": 1.0,
+     "flagged": 0.03076923076923077,
+     "silent_misroute": 0.0,
+     "n_labelled": 195,
+     "acc_all": 0.8461538461538461,
+     "acc_accepted": 0.8465608465608465,
+     "silent_error": 0.14871794871794872,
+     "e2e_bal_acc": 0.817581172917191
+    },
+    "guard": {
+     "n": 195,
+     "route_acc": 1.0,
+     "flagged": 0.07179487179487179,
+     "silent_misroute": 0.0,
+     "n_labelled": 195,
+     "acc_all": 0.8461538461538461,
+     "acc_accepted": 0.8453038674033149,
+     "silent_error": 0.14358974358974358,
+     "e2e_bal_acc": 0.7771205638056884
+    },
+    "full": {
+     "n": 195,
+     "route_acc": 1.0,
+     "flagged": 0.07179487179487179,
+     "silent_misroute": 0.0,
+     "n_labelled": 195,
+     "acc_all": 0.8461538461538461,
+     "acc_accepted": 0.8453038674033149,
+     "silent_error": 0.14358974358974358,
+     "e2e_bal_acc": 0.7771205638056884
+    }
+   },
+   "routed_to": {
+    "blood": 1.0
+   }
+  },
+  "external:cbis_roi:breast": {
+   "old": {
+    "n": 600,
+    "route_acc": 0.4083333333333333,
+    "flagged": 0.79,
+    "silent_misroute": 0.12666666666666668,
+    "n_labelled": 600,
+    "acc_all": 0.19166666666666668,
+    "acc_accepted": 0.1984126984126984,
+    "silent_error": 0.16833333333333333,
+    "e2e_bal_acc": 0.04055023923444976
+   },
+   "new": {
+    "gate": {
+     "n": 600,
+     "route_acc": 1.0,
+     "flagged": 0.0,
+     "silent_misroute": 0.0,
+     "n_labelled": 600,
+     "acc_all": 0.7733333333333333,
+     "acc_accepted": 0.7733333333333333,
+     "silent_error": 0.22666666666666666,
+     "e2e_bal_acc": 0.770334928229665
+    },
+    "maha": {
+     "n": 600,
+     "route_acc": 1.0,
+     "flagged": 0.02666666666666667,
+     "silent_misroute": 0.0,
+     "n_labelled": 600,
+     "acc_all": 0.7733333333333333,
+     "acc_accepted": 0.773972602739726,
+     "silent_error": 0.22,
+     "e2e_bal_acc": 0.7488038277511961
+    },
+    "energy": {
+     "n": 600,
+     "route_acc": 1.0,
+     "flagged": 0.05333333333333334,
+     "silent_misroute": 0.0,
+     "n_labelled": 600,
+     "acc_all": 0.7733333333333333,
+     "acc_accepted": 0.7640845070422535,
+     "silent_error": 0.22333333333333333,
+     "e2e_bal_acc": 0.705023923444976
+    },
+    "guard": {
+     "n": 600,
+     "route_acc": 1.0,
+     "flagged": 0.016666666666666666,
+     "silent_misroute": 0.0,
+     "n_labelled": 600,
+     "acc_all": 0.7733333333333333,
+     "acc_accepted": 0.7711864406779662,
+     "silent_error": 0.225,
+     "e2e_bal_acc": 0.7517942583732058
+    },
+    "full": {
+     "n": 600,
+     "route_acc": 1.0,
+     "flagged": 0.016666666666666666,
+     "silent_misroute": 0.0,
+     "n_labelled": 600,
+     "acc_all": 0.7733333333333333,
+     "acc_accepted": 0.7711864406779662,
+     "silent_error": 0.225,
+     "e2e_bal_acc": 0.7517942583732058
+    }
+   },
+   "routed_to": {
+    "breast": 1.0
+   }
+  },
+  "external:crc-val-he-7k:colon": {
+   "old": {
+    "n": 563,
+    "route_acc": 0.03197158081705151,
+    "flagged": 0.36589698046181174,
+    "silent_misroute": 0.6305506216696269,
+    "n_labelled": 563,
+    "acc_all": 0.028419182948490232,
+    "acc_accepted": 0.0056022408963585435,
+    "silent_error": 0.6305506216696269,
+    "e2e_bal_acc": 0.0044444444444444444
+   },
+   "new": {
+    "gate": {
+     "n": 563,
+     "route_acc": 1.0,
+     "flagged": 0.0,
+     "silent_misroute": 0.0,
+     "n_labelled": 563,
+     "acc_all": 0.9964476021314387,
+     "acc_accepted": 0.9964476021314387,
+     "silent_error": 0.003552397868561279,
+     "e2e_bal_acc": 0.9955555555555555
+    },
+    "maha": {
+     "n": 563,
+     "route_acc": 1.0,
+     "flagged": 0.012433392539964476,
+     "silent_misroute": 0.0,
+     "n_labelled": 563,
+     "acc_all": 0.9964476021314387,
+     "acc_accepted": 0.9964028776978417,
+     "silent_error": 0.003552397868561279,
+     "e2e_bal_acc": 0.9829717291255753
+    },
+    "energy": {
+     "n": 563,
+     "route_acc": 1.0,
+     "flagged": 0.0017761989342806395,
+     "silent_misroute": 0.0,
+     "n_labelled": 563,
+     "acc_all": 0.9964476021314387,
+     "acc_accepted": 0.99644128113879,
+     "silent_error": 0.003552397868561279,
+     "e2e_bal_acc": 0.9940762656147272
+    },
+    "guard": {
+     "n": 563,
+     "route_acc": 1.0,
+     "flagged": 0.0017761989342806395,
+     "silent_misroute": 0.0,
+     "n_labelled": 563,
+     "acc_all": 0.9964476021314387,
+     "acc_accepted": 0.99644128113879,
+     "silent_error": 0.003552397868561279,
+     "e2e_bal_acc": 0.9933333333333334
+    },
+    "full": {
+     "n": 563,
+     "route_acc": 1.0,
+     "flagged": 0.0017761989342806395,
+     "silent_misroute": 0.0,
+     "n_labelled": 563,
+     "acc_all": 0.9964476021314387,
+     "acc_accepted": 0.99644128113879,
+     "silent_error": 0.003552397868561279,
+     "e2e_bal_acc": 0.9933333333333334
+    }
+   },
+   "routed_to": {
+    "colon": 1.0
+   }
+  },
+  "external:ddti:thyroid": {
+   "old": {
+    "n": 81,
+    "route_acc": 0.8518518518518519,
+    "flagged": 0.8024691358024691,
+    "silent_misroute": 0.012345679012345678
+   },
+   "new": {
+    "gate": {
+     "n": 81,
+     "route_acc": 1.0,
+     "flagged": 0.0,
+     "silent_misroute": 0.0
+    },
+    "maha": {
+     "n": 81,
+     "route_acc": 1.0,
+     "flagged": 0.0,
+     "silent_misroute": 0.0
+    },
+    "energy": {
+     "n": 81,
+     "route_acc": 1.0,
+     "flagged": 0.012345679012345678,
+     "silent_misroute": 0.0
+    },
+    "guard": {
+     "n": 81,
+     "route_acc": 1.0,
+     "flagged": 0.012345679012345678,
+     "silent_misroute": 0.0
+    },
+    "full": {
+     "n": 81,
+     "route_acc": 1.0,
+     "flagged": 0.012345679012345678,
+     "silent_misroute": 0.0
+    }
+   },
+   "routed_to": {
+    "thyroid": 1.0
+   }
+  },
+  "external:edd2020:esophageal": {
+   "old": {
+    "n": 53,
+    "route_acc": 0.9811320754716981,
+    "flagged": 0.09433962264150944,
+    "silent_misroute": 0.0
+   },
+   "new": {
+    "gate": {
+     "n": 53,
+     "route_acc": 1.0,
+     "flagged": 0.0,
+     "silent_misroute": 0.0
+    },
+    "maha": {
+     "n": 53,
+     "route_acc": 1.0,
+     "flagged": 0.0,
+     "silent_misroute": 0.0
+    },
+    "energy": {
+     "n": 53,
+     "route_acc": 1.0,
+     "flagged": 0.0,
+     "silent_misroute": 0.0
+    },
+    "guard": {
+     "n": 53,
+     "route_acc": 1.0,
+     "flagged": 0.0,
+     "silent_misroute": 0.0
+    },
+    "full": {
+     "n": 53,
+     "route_acc": 1.0,
+     "flagged": 0.0,
+     "silent_misroute": 0.0
+    }
+   },
+   "routed_to": {
+    "esophageal": 1.0
+   }
+  },
+  "external:kits23:kidney": {
+   "old": {
+    "n": 384,
+    "route_acc": 0.4036458333333333,
+    "flagged": 0.3203125,
+    "silent_misroute": 0.4791666666666667,
+    "n_labelled": 384,
+    "acc_all": 0.2109375,
+    "acc_accepted": 0.1685823754789272,
+    "silent_error": 0.5651041666666666,
+    "e2e_bal_acc": 0.11208230407991532
+   },
+   "new": {
+    "gate": {
+     "n": 384,
+     "route_acc": 1.0,
+     "flagged": 0.0026041666666666665,
+     "silent_misroute": 0.0,
+     "n_labelled": 384,
+     "acc_all": 0.65625,
+     "acc_accepted": 0.6579634464751958,
+     "silent_error": 0.3411458333333333,
+     "e2e_bal_acc": 0.6539808355275659
+    },
+    "maha": {
+     "n": 384,
+     "route_acc": 1.0,
+     "flagged": 0.015625,
+     "silent_misroute": 0.0,
+     "n_labelled": 384,
+     "acc_all": 0.65625,
+     "acc_accepted": 0.656084656084656,
+     "silent_error": 0.3385416666666667,
+     "e2e_bal_acc": 0.6435570998126985
+    },
+    "energy": {
+     "n": 384,
+     "route_acc": 1.0,
+     "flagged": 0.013020833333333334,
+     "silent_misroute": 0.0,
+     "n_labelled": 384,
+     "acc_all": 0.65625,
+     "acc_accepted": 0.6569920844327177,
+     "silent_error": 0.3385416666666667,
+     "e2e_bal_acc": 0.6462308966041423
+    },
+    "guard": {
+     "n": 384,
+     "route_acc": 1.0,
+     "flagged": 0.013020833333333334,
+     "silent_misroute": 0.0,
+     "n_labelled": 384,
+     "acc_all": 0.65625,
+     "acc_accepted": 0.6569920844327177,
+     "silent_error": 0.3385416666666667,
+     "e2e_bal_acc": 0.6460951708786884
+    },
+    "full": {
+     "n": 384,
+     "route_acc": 1.0,
+     "flagged": 0.013020833333333334,
+     "silent_misroute": 0.0,
+     "n_labelled": 384,
+     "acc_all": 0.65625,
+     "acc_accepted": 0.6569920844327177,
+     "silent_error": 0.3385416666666667,
+     "e2e_bal_acc": 0.6460951708786884
+    }
+   },
+   "routed_to": {
+    "kidney": 1.0
+   }
+  },
+  "external:lbc:cervical": {
+   "old": {
+    "n": 299,
+    "route_acc": 0.9632107023411371,
+    "flagged": 0.09698996655518395,
+    "silent_misroute": 0.006688963210702341,
+    "n_labelled": 299,
+    "acc_all": 0.41471571906354515,
+    "acc_accepted": 0.44814814814814813,
+    "silent_error": 0.4983277591973244,
+    "e2e_bal_acc": 0.36141304347826086
+   },
+   "new": {
+    "gate": {
+     "n": 299,
+     "route_acc": 1.0,
+     "flagged": 0.0,
+     "silent_misroute": 0.0,
+     "n_labelled": 299,
+     "acc_all": 1.0,
+     "acc_accepted": 1.0,
+     "silent_error": 0.0,
+     "e2e_bal_acc": 1.0
+    },
+    "maha": {
+     "n": 299,
+     "route_acc": 1.0,
+     "flagged": 0.013377926421404682,
+     "silent_misroute": 0.0,
+     "n_labelled": 299,
+     "acc_all": 1.0,
+     "acc_accepted": 1.0,
+     "silent_error": 0.0,
+     "e2e_bal_acc": 0.9842391304347826
+    },
+    "energy": {
+     "n": 299,
+     "route_acc": 1.0,
+     "flagged": 0.010033444816053512,
+     "silent_misroute": 0.0,
+     "n_labelled": 299,
+     "acc_all": 1.0,
+     "acc_accepted": 1.0,
+     "silent_error": 0.0,
+     "e2e_bal_acc": 0.9902173913043478
+    },
+    "guard": {
+     "n": 299,
+     "route_acc": 1.0,
+     "flagged": 0.006688963210702341,
+     "silent_misroute": 0.0,
+     "n_labelled": 299,
+     "acc_all": 1.0,
+     "acc_accepted": 1.0,
+     "silent_error": 0.0,
+     "e2e_bal_acc": 0.991304347826087
+    },
+    "full": {
+     "n": 299,
+     "route_acc": 1.0,
+     "flagged": 0.006688963210702341,
+     "silent_misroute": 0.0,
+     "n_labelled": 299,
+     "acc_all": 1.0,
+     "acc_accepted": 1.0,
+     "silent_error": 0.0,
+     "e2e_bal_acc": 0.991304347826087
+    }
+   },
+   "routed_to": {
+    "cervical": 1.0
+   }
+  },
+  "HOLDOUT external:lunghist700:lung": {
+   "old": {
+    "n": 431,
+    "route_acc": 0.002320185614849188,
+    "flagged": 0.08352668213457076,
+    "silent_misroute": 0.9164733178654292,
+    "n_labelled": 431,
+    "acc_all": 0.002320185614849188,
+    "acc_accepted": 0.0,
+    "silent_error": 0.9164733178654292,
+    "e2e_bal_acc": 0.0
+   },
+   "new": {
+    "gate": {
+     "n": 431,
+     "route_acc": 0.0,
+     "flagged": 0.04408352668213457,
+     "silent_misroute": 0.9559164733178654,
+     "n_labelled": 431,
+     "acc_all": 0.0,
+     "acc_accepted": 0.0,
+     "silent_error": 0.9559164733178654,
+     "e2e_bal_acc": 0.0
+    },
+    "maha": {
+     "n": 431,
+     "route_acc": 0.0,
+     "flagged": 0.32018561484918795,
+     "silent_misroute": 0.679814385150812,
+     "n_labelled": 431,
+     "acc_all": 0.0,
+     "acc_accepted": 0.0,
+     "silent_error": 0.679814385150812,
+     "e2e_bal_acc": 0.0
+    },
+    "energy": {
+     "n": 431,
+     "route_acc": 0.0,
+     "flagged": 0.4802784222737819,
+     "silent_misroute": 0.5197215777262181,
+     "n_labelled": 431,
+     "acc_all": 0.0,
+     "acc_accepted": 0.0,
+     "silent_error": 0.5197215777262181,
+     "e2e_bal_acc": 0.0
+    },
+    "guard": {
+     "n": 431,
+     "route_acc": 0.0,
+     "flagged": 0.3039443155452436,
+     "silent_misroute": 0.6960556844547564,
+     "n_labelled": 431,
+     "acc_all": 0.0,
+     "acc_accepted": 0.0,
+     "silent_error": 0.6960556844547564,
+     "e2e_bal_acc": 0.0
+    },
+    "full": {
+     "n": 431,
+     "route_acc": 0.0,
+     "flagged": 0.3039443155452436,
+     "silent_misroute": 0.6960556844547564,
+     "n_labelled": 431,
+     "acc_all": 0.0,
+     "acc_accepted": 0.0,
+     "silent_error": 0.6960556844547564,
+     "e2e_bal_acc": 0.0
+    }
+   },
+   "routed_to": {
+    "ovarian": 0.868,
+    "colon": 0.116,
+    "breast": 0.014
+   }
+  },
+  "external:msd_task07:pancreatic": {
+   "old": {
+    "n": 600,
+    "route_acc": 0.6116666666666667,
+    "flagged": 0.405,
+    "silent_misroute": 0.27,
+    "n_labelled": 600,
+    "acc_all": 0.3983333333333333,
+    "acc_accepted": 0.3389355742296919,
+    "silent_error": 0.3933333333333333,
+    "e2e_bal_acc": 0.1547314578005115
+   },
+   "new": {
+    "gate": {
+     "n": 600,
+     "route_acc": 0.6933333333333334,
+     "flagged": 0.11,
+     "silent_misroute": 0.26166666666666666,
+     "n_labelled": 600,
+     "acc_all": 0.5416666666666666,
+     "acc_accepted": 0.5561797752808989,
+     "silent_error": 0.395,
+     "e2e_bal_acc": 0.5034019016385418
+    },
+    "maha": {
+     "n": 600,
+     "route_acc": 0.6933333333333334,
+     "flagged": 0.4683333333333333,
+     "silent_misroute": 0.105,
+     "n_labelled": 600,
+     "acc_all": 0.5416666666666666,
+     "acc_accepted": 0.6363636363636364,
+     "silent_error": 0.19333333333333333,
+     "e2e_bal_acc": 0.3453358460088841
+    },
+    "energy": {
+     "n": 600,
+     "route_acc": 0.6933333333333334,
+     "flagged": 0.38666666666666666,
+     "silent_misroute": 0.115,
+     "n_labelled": 600,
+     "acc_all": 0.5416666666666666,
+     "acc_accepted": 0.6440217391304348,
+     "silent_error": 0.21833333333333332,
+     "e2e_bal_acc": 0.4055176886648148
+    },
+    "guard": {
+     "n": 600,
+     "route_acc": 0.6933333333333334,
+     "flagged": 0.37166666666666665,
+     "silent_misroute": 0.13,
+     "n_labelled": 600,
+     "acc_all": 0.5416666666666666,
+     "acc_accepted": 0.6259946949602122,
+     "silent_error": 0.235,
+     "e2e_bal_acc": 0.4064660605244802
+    },
+    "full": {
+     "n": 600,
+     "route_acc": 0.6933333333333334,
+     "flagged": 0.37333333333333335,
+     "silent_misroute": 0.13,
+     "n_labelled": 600,
+     "acc_all": 0.5416666666666666,
+     "acc_accepted": 0.625,
+     "silent_error": 0.235,
+     "e2e_bal_acc": 0.4040737160268726
+    }
+   },
+   "routed_to": {
+    "pancreatic": 0.693,
+    "kidney": 0.307
+   }
+  },
+  "HOLDOUT external:oral:oral": {
+   "old": {
+    "n": 600,
+    "route_acc": 0.9966666666666667,
+    "flagged": 0.01,
+    "silent_misroute": 0.0,
+    "n_labelled": 600,
+    "acc_all": 0.9616666666666667,
+    "acc_accepted": 0.9646464646464646,
+    "silent_error": 0.035,
+    "e2e_bal_acc": 0.9560630341880342
+   },
+   "new": {
+    "gate": {
+     "n": 600,
+     "route_acc": 1.0,
+     "flagged": 0.0,
+     "silent_misroute": 0.0,
+     "n_labelled": 600,
+     "acc_all": 0.9833333333333333,
+     "acc_accepted": 0.9833333333333333,
+     "silent_error": 0.016666666666666666,
+     "e2e_bal_acc": 0.9833066239316239
+    },
+    "maha": {
+     "n": 600,
+     "route_acc": 1.0,
+     "flagged": 0.11166666666666666,
+     "silent_misroute": 0.0,
+     "n_labelled": 600,
+     "acc_all": 0.9833333333333333,
+     "acc_accepted": 0.9812382739212008,
+     "silent_error": 0.016666666666666666,
+     "e2e_bal_acc": 0.874065170940171
+    },
+    "energy": {
+     "n": 600,
+     "route_acc": 1.0,
+     "flagged": 0.11333333333333333,
+     "silent_misroute": 0.0,
+     "n_labelled": 600,
+     "acc_all": 0.9833333333333333,
+     "acc_accepted": 0.981203007518797,
+     "silent_error": 0.016666666666666666,
+     "e2e_bal_acc": 0.874065170940171
+    },
+    "guard": {
+     "n": 600,
+     "route_acc": 1.0,
+     "flagged": 0.06833333333333333,
+     "silent_misroute": 0.0,
+     "n_labelled": 600,
+     "acc_all": 0.9833333333333333,
+     "acc_accepted": 0.9821109123434705,
+     "silent_error": 0.016666666666666666,
+     "e2e_bal_acc": 0.9170673076923077
+    },
+    "full": {
+     "n": 600,
+     "route_acc": 1.0,
+     "flagged": 0.06833333333333333,
+     "silent_misroute": 0.0,
+     "n_labelled": 600,
+     "acc_all": 0.9833333333333333,
+     "acc_accepted": 0.9821109123434705,
+     "silent_error": 0.016666666666666666,
+     "e2e_bal_acc": 0.9170673076923077
+    }
+   },
+   "routed_to": {
+    "oral": 1.0
+   }
+  },
+  "external:ovarian:ovarian": {
+   "old": {
+    "n": 126,
+    "route_acc": 0.753968253968254,
+    "flagged": 0.31746031746031744,
+    "silent_misroute": 0.09523809523809523,
+    "n_labelled": 126,
+    "acc_all": 0.42063492063492064,
+    "acc_accepted": 0.4883720930232558,
+    "silent_error": 0.3492063492063492,
+    "e2e_bal_acc": 0.32451218499605594
+   },
+   "new": {
+    "gate": {
+     "n": 126,
+     "route_acc": 0.9920634920634921,
+     "flagged": 0.007936507936507936,
+     "silent_misroute": 0.0,
+     "n_labelled": 126,
+     "acc_all": 0.9126984126984127,
+     "acc_accepted": 0.92,
+     "silent_error": 0.07936507936507936,
+     "e2e_bal_acc": 0.9125617553036909
+    },
+    "maha": {
+     "n": 126,
+     "route_acc": 0.9920634920634921,
+     "flagged": 0.15873015873015872,
+     "silent_misroute": 0.0,
+     "n_labelled": 126,
+     "acc_all": 0.9126984126984127,
+     "acc_accepted": 0.9433962264150944,
+     "silent_error": 0.047619047619047616,
+     "e2e_bal_acc": 0.795235500477436
+    },
+    "energy": {
+     "n": 126,
+     "route_acc": 0.9920634920634921,
+     "flagged": 0.3492063492063492,
+     "silent_misroute": 0.0,
+     "n_labelled": 126,
+     "acc_all": 0.9126984126984127,
+     "acc_accepted": 0.926829268292683,
+     "silent_error": 0.047619047619047616,
+     "e2e_bal_acc": 0.6043363640137833
+    },
+    "guard": {
+     "n": 126,
+     "route_acc": 0.9920634920634921,
+     "flagged": 0.1746031746031746,
+     "silent_misroute": 0.0,
+     "n_labelled": 126,
+     "acc_all": 0.9126984126984127,
+     "acc_accepted": 0.9519230769230769,
+     "silent_error": 0.03968253968253968,
+     "e2e_bal_acc": 0.7841351143770499
+    },
+    "full": {
+     "n": 126,
+     "route_acc": 0.9920634920634921,
+     "flagged": 0.1746031746031746,
+     "silent_misroute": 0.0,
+     "n_labelled": 126,
+     "acc_all": 0.9126984126984127,
+     "acc_accepted": 0.9519230769230769,
+     "silent_error": 0.03968253968253968,
+     "e2e_bal_acc": 0.7841351143770499
+    }
+   },
+   "routed_to": {
+    "ovarian": 0.992,
+    "oral": 0.008
+   }
+  },
+  "external:pad-ufes-20:skin": {
+   "old": {
+    "n": 600,
+    "route_acc": 0.83,
+    "flagged": 0.31666666666666665,
+    "silent_misroute": 0.056666666666666664,
+    "n_labelled": 600,
+    "acc_all": 0.23833333333333334,
+    "acc_accepted": 0.2780487804878049,
+    "silent_error": 0.49333333333333335,
+    "e2e_bal_acc": 0.17900495624475335
+   },
+   "new": {
+    "gate": {
+     "n": 600,
+     "route_acc": 0.9983333333333333,
+     "flagged": 0.005,
+     "silent_misroute": 0.0016666666666666668,
+     "n_labelled": 600,
+     "acc_all": 0.7166666666666667,
+     "acc_accepted": 0.7185929648241206,
+     "silent_error": 0.28,
+     "e2e_bal_acc": 0.5810286727013219
+    },
+    "maha": {
+     "n": 600,
+     "route_acc": 0.9983333333333333,
+     "flagged": 0.05,
+     "silent_misroute": 0.0,
+     "n_labelled": 600,
+     "acc_all": 0.7166666666666667,
+     "acc_accepted": 0.7140350877192982,
+     "silent_error": 0.27166666666666667,
+     "e2e_bal_acc": 0.5388774473029893
+    },
+    "energy": {
+     "n": 600,
+     "route_acc": 0.9983333333333333,
+     "flagged": 0.06333333333333334,
+     "silent_misroute": 0.0,
+     "n_labelled": 600,
+     "acc_all": 0.7166666666666667,
+     "acc_accepted": 0.7153024911032029,
+     "silent_error": 0.26666666666666666,
+     "e2e_bal_acc": 0.5382126665391986
+    },
+    "guard": {
+     "n": 600,
+     "route_acc": 0.9983333333333333,
+     "flagged": 0.043333333333333335,
+     "silent_misroute": 0.0,
+     "n_labelled": 600,
+     "acc_all": 0.7166666666666667,
+     "acc_accepted": 0.7177700348432056,
+     "silent_error": 0.27,
+     "e2e_bal_acc": 0.5479710639817303
+    },
+    "full": {
+     "n": 600,
+     "route_acc": 0.9983333333333333,
+     "flagged": 0.043333333333333335,
+     "silent_misroute": 0.0,
+     "n_labelled": 600,
+     "acc_all": 0.7166666666666667,
+     "acc_accepted": 0.7177700348432056,
+     "silent_error": 0.27,
+     "e2e_bal_acc": 0.5479710639817303
+    }
+   },
+   "routed_to": {
+    "skin": 0.998,
+    "esophageal": 0.002
+   }
+  },
+  "HOLDOUT external:pmram:brain_2d": {
+   "old": {
+    "n": 600,
+    "route_acc": 0.9316666666666666,
+    "flagged": 0.12666666666666668,
+    "silent_misroute": 0.01,
+    "n_labelled": 600,
+    "acc_all": 0.86,
+    "acc_accepted": 0.9122137404580153,
+    "silent_error": 0.07666666666666666,
+    "e2e_bal_acc": 0.7988483436853002
+   },
+   "new": {
+    "gate": {
+     "n": 600,
+     "route_acc": 0.9633333333333334,
+     "flagged": 0.02666666666666667,
+     "silent_misroute": 0.03,
+     "n_labelled": 600,
+     "acc_all": 0.8416666666666667,
+     "acc_accepted": 0.8476027397260274,
+     "silent_error": 0.14833333333333334,
+     "e2e_bal_acc": 0.8237361973775017
+    },
+    "maha": {
+     "n": 600,
+     "route_acc": 0.9633333333333334,
+     "flagged": 0.4266666666666667,
+     "silent_misroute": 0.005,
+     "n_labelled": 600,
+     "acc_all": 0.8416666666666667,
+     "acc_accepted": 0.9244186046511628,
+     "silent_error": 0.043333333333333335,
+     "e2e_bal_acc": 0.5354986197377501
+    },
+    "energy": {
+     "n": 600,
+     "route_acc": 0.9633333333333334,
+     "flagged": 0.215,
+     "silent_misroute": 0.008333333333333333,
+     "n_labelled": 600,
+     "acc_all": 0.8416666666666667,
+     "acc_accepted": 0.8874734607218684,
+     "silent_error": 0.08833333333333333,
+     "e2e_bal_acc": 0.7038366977225673
+    },
+    "guard": {
+     "n": 600,
+     "route_acc": 0.9633333333333334,
+     "flagged": 0.32,
+     "silent_misroute": 0.006666666666666667,
+     "n_labelled": 600,
+     "acc_all": 0.8416666666666667,
+     "acc_accepted": 0.9044117647058824,
+     "silent_error": 0.065,
+     "e2e_bal_acc": 0.6216787439613526
+    },
+    "full": {
+     "n": 600,
+     "route_acc": 0.9633333333333334,
+     "flagged": 0.32,
+     "silent_misroute": 0.006666666666666667,
+     "n_labelled": 600,
+     "acc_all": 0.8416666666666667,
+     "acc_accepted": 0.9044117647058824,
+     "silent_error": 0.065,
+     "e2e_bal_acc": 0.6216787439613526
+    }
+   },
+   "routed_to": {
+    "brain_2d": 0.963,
+    "kidney": 0.028,
+    "pancreatic": 0.007
+   }
+  },
+  "extra:isic2018:skin": {
+   "old": {
+    "n": 600,
+    "route_acc": 0.98,
+    "flagged": 0.05333333333333334,
+    "silent_misroute": 0.0016666666666666668
+   },
+   "new": {
+    "gate": {
+     "n": 600,
+     "route_acc": 0.9983333333333333,
+     "flagged": 0.0016666666666666668,
+     "silent_misroute": 0.0
+    },
+    "maha": {
+     "n": 600,
+     "route_acc": 0.9983333333333333,
+     "flagged": 0.03333333333333333,
+     "silent_misroute": 0.0
+    },
+    "energy": {
+     "n": 600,
+     "route_acc": 0.9983333333333333,
+     "flagged": 0.085,
+     "silent_misroute": 0.0
+    },
+    "guard": {
+     "n": 600,
+     "route_acc": 0.9983333333333333,
+     "flagged": 0.05333333333333334,
+     "silent_misroute": 0.0
+    },
+    "full": {
+     "n": 600,
+     "route_acc": 0.9983333333333333,
+     "flagged": 0.05333333333333334,
+     "silent_misroute": 0.0
+    }
+   },
+   "routed_to": {
+    "skin": 0.998,
+    "esophageal": 0.002
+   }
+  },
+  "extra:tn3k:thyroid": {
+   "old": {
+    "n": 353,
+    "route_acc": 1.0,
+    "flagged": 0.20396600566572237,
+    "silent_misroute": 0.0
+   },
+   "new": {
+    "gate": {
+     "n": 353,
+     "route_acc": 1.0,
+     "flagged": 0.0084985835694051,
+     "silent_misroute": 0.0
+    },
+    "maha": {
+     "n": 353,
+     "route_acc": 1.0,
+     "flagged": 0.0084985835694051,
+     "silent_misroute": 0.0
+    },
+    "energy": {
+     "n": 353,
+     "route_acc": 1.0,
+     "flagged": 0.019830028328611898,
+     "silent_misroute": 0.0
+    },
+    "guard": {
+     "n": 353,
+     "route_acc": 1.0,
+     "flagged": 0.0056657223796034,
+     "silent_misroute": 0.0
+    },
+    "full": {
+     "n": 353,
+     "route_acc": 1.0,
+     "flagged": 0.0113314447592068,
+     "silent_misroute": 0.0
+    }
+   },
+   "routed_to": {
+    "thyroid": 1.0
+   }
+  },
+  "internal:internal:bladder": {
+   "old": {
+    "n": 249,
+    "route_acc": 1.0,
+    "flagged": 0.0,
+    "silent_misroute": 0.0,
+    "n_labelled": 249,
+    "acc_all": 0.9397590361445783,
+    "acc_accepted": 0.9397590361445783,
+    "silent_error": 0.060240963855421686,
+    "e2e_bal_acc": 0.9366215512753774
+   },
+   "new": {
+    "gate": {
+     "n": 249,
+     "route_acc": 1.0,
+     "flagged": 0.0,
+     "silent_misroute": 0.0,
+     "n_labelled": 249,
+     "acc_all": 0.7831325301204819,
+     "acc_accepted": 0.7831325301204819,
+     "silent_error": 0.21686746987951808,
+     "e2e_bal_acc": 0.7917425819885476
+    },
+    "maha": {
+     "n": 249,
+     "route_acc": 1.0,
+     "flagged": 0.03614457831325301,
+     "silent_misroute": 0.0,
+     "n_labelled": 249,
+     "acc_all": 0.7831325301204819,
+     "acc_accepted": 0.775,
+     "silent_error": 0.21686746987951808,
+     "e2e_bal_acc": 0.7564094221759501
+    },
+    "energy": {
+     "n": 249,
+     "route_acc": 1.0,
+     "flagged": 0.004016064257028112,
+     "silent_misroute": 0.0,
+     "n_labelled": 249,
+     "acc_all": 0.7831325301204819,
+     "acc_accepted": 0.782258064516129,
+     "silent_error": 0.21686746987951808,
+     "e2e_bal_acc": 0.7880661114003124
+    },
+    "guard": {
+     "n": 249,
+     "route_acc": 1.0,
+     "flagged": 0.024096385542168676,
+     "silent_misroute": 0.0,
+     "n_labelled": 249,
+     "acc_all": 0.7831325301204819,
+     "acc_accepted": 0.7777777777777778,
+     "silent_error": 0.21686746987951808,
+     "e2e_bal_acc": 0.7681871421134825
+    },
+    "full": {
+     "n": 249,
+     "route_acc": 1.0,
+     "flagged": 0.024096385542168676,
+     "silent_misroute": 0.0,
+     "n_labelled": 249,
+     "acc_all": 0.7831325301204819,
+     "acc_accepted": 0.7777777777777778,
+     "silent_error": 0.21686746987951808,
+     "e2e_bal_acc": 0.7681871421134825
+    }
+   },
+   "routed_to": {
+    "bladder": 1.0
+   }
+  },
+  "internal:internal:blood": {
+   "old": {
+    "n": 400,
+    "route_acc": 1.0,
+    "flagged": 0.0,
+    "silent_misroute": 0.0,
+    "n_labelled": 400,
+    "acc_all": 1.0,
+    "acc_accepted": 1.0,
+    "silent_error": 0.0,
+    "e2e_bal_acc": 1.0
+   },
+   "new": {
+    "gate": {
+     "n": 400,
+     "route_acc": 1.0,
+     "flagged": 0.0,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 1.0,
+     "acc_accepted": 1.0,
+     "silent_error": 0.0,
+     "e2e_bal_acc": 1.0
+    },
+    "maha": {
+     "n": 400,
+     "route_acc": 1.0,
+     "flagged": 0.0025,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 1.0,
+     "acc_accepted": 1.0,
+     "silent_error": 0.0,
+     "e2e_bal_acc": 0.9976190476190476
+    },
+    "energy": {
+     "n": 400,
+     "route_acc": 1.0,
+     "flagged": 0.0025,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 1.0,
+     "acc_accepted": 1.0,
+     "silent_error": 0.0,
+     "e2e_bal_acc": 0.9976190476190476
+    },
+    "guard": {
+     "n": 400,
+     "route_acc": 1.0,
+     "flagged": 0.0025,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 1.0,
+     "acc_accepted": 1.0,
+     "silent_error": 0.0,
+     "e2e_bal_acc": 0.9976190476190476
+    },
+    "full": {
+     "n": 400,
+     "route_acc": 1.0,
+     "flagged": 0.0025,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 1.0,
+     "acc_accepted": 1.0,
+     "silent_error": 0.0,
+     "e2e_bal_acc": 0.9976190476190476
+    }
+   },
+   "routed_to": {
+    "blood": 1.0
+   }
+  },
+  "internal:internal:brain_2d": {
+   "old": {
+    "n": 400,
+    "route_acc": 1.0,
+    "flagged": 0.0,
+    "silent_misroute": 0.0,
+    "n_labelled": 400,
+    "acc_all": 0.9975,
+    "acc_accepted": 0.9975,
+    "silent_error": 0.0025,
+    "e2e_bal_acc": 0.9981167608286253
+   },
+   "new": {
+    "gate": {
+     "n": 400,
+     "route_acc": 1.0,
+     "flagged": 0.0,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 1.0,
+     "acc_accepted": 1.0,
+     "silent_error": 0.0,
+     "e2e_bal_acc": 1.0
+    },
+    "maha": {
+     "n": 400,
+     "route_acc": 1.0,
+     "flagged": 0.0225,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 1.0,
+     "acc_accepted": 1.0,
+     "silent_error": 0.0,
+     "e2e_bal_acc": 0.9733070195805279
+    },
+    "energy": {
+     "n": 400,
+     "route_acc": 1.0,
+     "flagged": 0.0025,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 1.0,
+     "acc_accepted": 1.0,
+     "silent_error": 0.0,
+     "e2e_bal_acc": 0.9977777777777778
+    },
+    "guard": {
+     "n": 400,
+     "route_acc": 1.0,
+     "flagged": 0.0075,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 1.0,
+     "acc_accepted": 1.0,
+     "silent_error": 0.0,
+     "e2e_bal_acc": 0.9909893455098935
+    },
+    "full": {
+     "n": 400,
+     "route_acc": 1.0,
+     "flagged": 0.0075,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 1.0,
+     "acc_accepted": 1.0,
+     "silent_error": 0.0,
+     "e2e_bal_acc": 0.9909893455098935
+    }
+   },
+   "routed_to": {
+    "brain_2d": 1.0
+   }
+  },
+  "internal:internal:breast": {
+   "old": {
+    "n": 400,
+    "route_acc": 0.99,
+    "flagged": 0.0625,
+    "silent_misroute": 0.005,
+    "n_labelled": 400,
+    "acc_all": 0.9725,
+    "acc_accepted": 0.976,
+    "silent_error": 0.0225,
+    "e2e_bal_acc": 0.872247893449307
+   },
+   "new": {
+    "gate": {
+     "n": 400,
+     "route_acc": 0.9725,
+     "flagged": 0.0175,
+     "silent_misroute": 0.02,
+     "n_labelled": 400,
+     "acc_all": 0.95,
+     "acc_accepted": 0.9567430025445293,
+     "silent_error": 0.0425,
+     "e2e_bal_acc": 0.9074627767207273
+    },
+    "maha": {
+     "n": 400,
+     "route_acc": 0.9725,
+     "flagged": 0.1725,
+     "silent_misroute": 0.005,
+     "n_labelled": 400,
+     "acc_all": 0.95,
+     "acc_accepted": 0.9667673716012085,
+     "silent_error": 0.0275,
+     "e2e_bal_acc": 0.7358279725770892
+    },
+    "energy": {
+     "n": 400,
+     "route_acc": 0.9725,
+     "flagged": 0.11,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 0.95,
+     "acc_accepted": 0.9747191011235955,
+     "silent_error": 0.0225,
+     "e2e_bal_acc": 0.8111050708223853
+    },
+    "guard": {
+     "n": 400,
+     "route_acc": 0.9725,
+     "flagged": 0.105,
+     "silent_misroute": 0.005,
+     "n_labelled": 400,
+     "acc_all": 0.95,
+     "acc_accepted": 0.9692737430167597,
+     "silent_error": 0.0275,
+     "e2e_bal_acc": 0.8111050708223853
+    },
+    "full": {
+     "n": 400,
+     "route_acc": 0.9725,
+     "flagged": 0.105,
+     "silent_misroute": 0.005,
+     "n_labelled": 400,
+     "acc_all": 0.95,
+     "acc_accepted": 0.9692737430167597,
+     "silent_error": 0.0275,
+     "e2e_bal_acc": 0.8111050708223853
+    }
+   },
+   "routed_to": {
+    "breast": 0.973,
+    "ovarian": 0.022,
+    "gastric": 0.003
+   }
+  },
+  "internal:internal:cervical": {
+   "old": {
+    "n": 400,
+    "route_acc": 1.0,
+    "flagged": 0.0,
+    "silent_misroute": 0.0,
+    "n_labelled": 400,
+    "acc_all": 1.0,
+    "acc_accepted": 1.0,
+    "silent_error": 0.0,
+    "e2e_bal_acc": 1.0
+   },
+   "new": {
+    "gate": {
+     "n": 400,
+     "route_acc": 1.0,
+     "flagged": 0.0,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 1.0,
+     "acc_accepted": 1.0,
+     "silent_error": 0.0,
+     "e2e_bal_acc": 1.0
+    },
+    "maha": {
+     "n": 400,
+     "route_acc": 1.0,
+     "flagged": 0.0075,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 1.0,
+     "acc_accepted": 1.0,
+     "silent_error": 0.0,
+     "e2e_bal_acc": 0.992044319844523
+    },
+    "energy": {
+     "n": 400,
+     "route_acc": 1.0,
+     "flagged": 0.015,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 1.0,
+     "acc_accepted": 1.0,
+     "silent_error": 0.0,
+     "e2e_bal_acc": 0.9827287829541351
+    },
+    "guard": {
+     "n": 400,
+     "route_acc": 1.0,
+     "flagged": 0.0,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 1.0,
+     "acc_accepted": 1.0,
+     "silent_error": 0.0,
+     "e2e_bal_acc": 1.0
+    },
+    "full": {
+     "n": 400,
+     "route_acc": 1.0,
+     "flagged": 0.0,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 1.0,
+     "acc_accepted": 1.0,
+     "silent_error": 0.0,
+     "e2e_bal_acc": 1.0
+    }
+   },
+   "routed_to": {
+    "cervical": 1.0
+   }
+  },
+  "internal:internal:colon": {
+   "old": {
+    "n": 400,
+    "route_acc": 1.0,
+    "flagged": 0.0,
+    "silent_misroute": 0.0,
+    "n_labelled": 400,
+    "acc_all": 1.0,
+    "acc_accepted": 1.0,
+    "silent_error": 0.0,
+    "e2e_bal_acc": 1.0
+   },
+   "new": {
+    "gate": {
+     "n": 400,
+     "route_acc": 0.9975,
+     "flagged": 0.0025,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 0.9975,
+     "acc_accepted": 1.0,
+     "silent_error": 0.0,
+     "e2e_bal_acc": 0.9976190476190476
+    },
+    "maha": {
+     "n": 400,
+     "route_acc": 0.9975,
+     "flagged": 0.0225,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 0.9975,
+     "acc_accepted": 1.0,
+     "silent_error": 0.0,
+     "e2e_bal_acc": 0.9785714285714286
+    },
+    "energy": {
+     "n": 400,
+     "route_acc": 0.9975,
+     "flagged": 0.0125,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 0.9975,
+     "acc_accepted": 1.0,
+     "silent_error": 0.0,
+     "e2e_bal_acc": 0.9880952380952381
+    },
+    "guard": {
+     "n": 400,
+     "route_acc": 0.9975,
+     "flagged": 0.0125,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 0.9975,
+     "acc_accepted": 1.0,
+     "silent_error": 0.0,
+     "e2e_bal_acc": 0.9880952380952381
+    },
+    "full": {
+     "n": 400,
+     "route_acc": 0.9975,
+     "flagged": 0.0125,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 0.9975,
+     "acc_accepted": 1.0,
+     "silent_error": 0.0,
+     "e2e_bal_acc": 0.9880952380952381
+    }
+   },
+   "routed_to": {
+    "colon": 0.998,
+    "ovarian": 0.003
+   }
+  },
+  "internal:internal:esophageal": {
+   "old": {
+    "n": 400,
+    "route_acc": 1.0,
+    "flagged": 0.0025,
+    "silent_misroute": 0.0,
+    "n_labelled": 400,
+    "acc_all": 0.9975,
+    "acc_accepted": 0.9974937343358395,
+    "silent_error": 0.0025,
+    "e2e_bal_acc": 0.9900591480689895
+   },
+   "new": {
+    "gate": {
+     "n": 400,
+     "route_acc": 1.0,
+     "flagged": 0.0,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 0.9975,
+     "acc_accepted": 0.9975,
+     "silent_error": 0.0025,
+     "e2e_bal_acc": 0.998533724340176
+    },
+    "maha": {
+     "n": 400,
+     "route_acc": 1.0,
+     "flagged": 0.0,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 0.9975,
+     "acc_accepted": 0.9975,
+     "silent_error": 0.0025,
+     "e2e_bal_acc": 0.998533724340176
+    },
+    "energy": {
+     "n": 400,
+     "route_acc": 1.0,
+     "flagged": 0.0225,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 0.9975,
+     "acc_accepted": 0.9974424552429667,
+     "silent_error": 0.0025,
+     "e2e_bal_acc": 0.9853372434017595
+    },
+    "guard": {
+     "n": 400,
+     "route_acc": 1.0,
+     "flagged": 0.005,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 0.9975,
+     "acc_accepted": 0.9974874371859297,
+     "silent_error": 0.0025,
+     "e2e_bal_acc": 0.9956011730205279
+    },
+    "full": {
+     "n": 400,
+     "route_acc": 1.0,
+     "flagged": 0.005,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 0.9975,
+     "acc_accepted": 0.9974874371859297,
+     "silent_error": 0.0025,
+     "e2e_bal_acc": 0.9956011730205279
+    }
+   },
+   "routed_to": {
+    "esophageal": 1.0
+   }
+  },
+  "internal:internal:gastric": {
+   "old": {
+    "n": 400,
+    "route_acc": 0.9875,
+    "flagged": 0.0325,
+    "silent_misroute": 0.0025,
+    "n_labelled": 400,
+    "acc_all": 0.8525,
+    "acc_accepted": 0.8604651162790697,
+    "silent_error": 0.135,
+    "e2e_bal_acc": 0.8306462776298273
+   },
+   "new": {
+    "gate": {
+     "n": 400,
+     "route_acc": 0.9975,
+     "flagged": 0.0025,
+     "silent_misroute": 0.0025,
+     "n_labelled": 400,
+     "acc_all": 0.745,
+     "acc_accepted": 0.7443609022556391,
+     "silent_error": 0.255,
+     "e2e_bal_acc": 0.741693932667373
+    },
+    "maha": {
+     "n": 400,
+     "route_acc": 0.9975,
+     "flagged": 0.2375,
+     "silent_misroute": 0.0025,
+     "n_labelled": 400,
+     "acc_all": 0.745,
+     "acc_accepted": 0.7344262295081967,
+     "silent_error": 0.2025,
+     "e2e_bal_acc": 0.5641357867737984
+    },
+    "energy": {
+     "n": 400,
+     "route_acc": 0.9975,
+     "flagged": 0.1275,
+     "silent_misroute": 0.0025,
+     "n_labelled": 400,
+     "acc_all": 0.745,
+     "acc_accepted": 0.7392550143266475,
+     "silent_error": 0.2275,
+     "e2e_bal_acc": 0.6458167012615985
+    },
+    "guard": {
+     "n": 400,
+     "route_acc": 0.9975,
+     "flagged": 0.115,
+     "silent_misroute": 0.0025,
+     "n_labelled": 400,
+     "acc_all": 0.745,
+     "acc_accepted": 0.7429378531073446,
+     "silent_error": 0.2275,
+     "e2e_bal_acc": 0.6608889045431657
+    },
+    "full": {
+     "n": 400,
+     "route_acc": 0.9975,
+     "flagged": 0.115,
+     "silent_misroute": 0.0025,
+     "n_labelled": 400,
+     "acc_all": 0.745,
+     "acc_accepted": 0.7429378531073446,
+     "silent_error": 0.2275,
+     "e2e_bal_acc": 0.6608889045431657
+    }
+   },
+   "routed_to": {
+    "gastric": 0.998,
+    "ovarian": 0.003
+   }
+  },
+  "internal:internal:kidney": {
+   "old": {
+    "n": 400,
+    "route_acc": 1.0,
+    "flagged": 0.1175,
+    "silent_misroute": 0.0,
+    "n_labelled": 400,
+    "acc_all": 1.0,
+    "acc_accepted": 1.0,
+    "silent_error": 0.0,
+    "e2e_bal_acc": 0.9120793787748058
+   },
+   "new": {
+    "gate": {
+     "n": 400,
+     "route_acc": 1.0,
+     "flagged": 0.0,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 0.9675,
+     "acc_accepted": 0.9675,
+     "silent_error": 0.0325,
+     "e2e_bal_acc": 0.9750647109577222
+    },
+    "maha": {
+     "n": 400,
+     "route_acc": 1.0,
+     "flagged": 0.0,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 0.9675,
+     "acc_accepted": 0.9675,
+     "silent_error": 0.0325,
+     "e2e_bal_acc": 0.9750647109577222
+    },
+    "energy": {
+     "n": 400,
+     "route_acc": 1.0,
+     "flagged": 0.0,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 0.9675,
+     "acc_accepted": 0.9675,
+     "silent_error": 0.0325,
+     "e2e_bal_acc": 0.9750647109577222
+    },
+    "guard": {
+     "n": 400,
+     "route_acc": 1.0,
+     "flagged": 0.0,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 0.9675,
+     "acc_accepted": 0.9675,
+     "silent_error": 0.0325,
+     "e2e_bal_acc": 0.9750647109577222
+    },
+    "full": {
+     "n": 400,
+     "route_acc": 1.0,
+     "flagged": 0.0,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 0.9675,
+     "acc_accepted": 0.9675,
+     "silent_error": 0.0325,
+     "e2e_bal_acc": 0.9750647109577222
+    }
+   },
+   "routed_to": {
+    "kidney": 1.0
+   }
+  },
+  "internal:internal:lung": {
+   "old": {
+    "n": 400,
+    "route_acc": 1.0,
+    "flagged": 0.0,
+    "silent_misroute": 0.0,
+    "n_labelled": 400,
+    "acc_all": 0.9975,
+    "acc_accepted": 0.9975,
+    "silent_error": 0.0025,
+    "e2e_bal_acc": 0.997093023255814
+   },
+   "new": {
+    "gate": {
+     "n": 400,
+     "route_acc": 1.0,
+     "flagged": 0.0,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 0.9975,
+     "acc_accepted": 0.9975,
+     "silent_error": 0.0025,
+     "e2e_bal_acc": 0.9978070175438596
+    },
+    "maha": {
+     "n": 400,
+     "route_acc": 1.0,
+     "flagged": 0.19,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 0.9975,
+     "acc_accepted": 1.0,
+     "silent_error": 0.0,
+     "e2e_bal_acc": 0.8133414932680538
+    },
+    "energy": {
+     "n": 400,
+     "route_acc": 1.0,
+     "flagged": 0.0175,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 0.9975,
+     "acc_accepted": 0.9974554707379135,
+     "silent_error": 0.0025,
+     "e2e_bal_acc": 0.9810281517747859
+    },
+    "guard": {
+     "n": 400,
+     "route_acc": 1.0,
+     "flagged": 0.075,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 0.9975,
+     "acc_accepted": 0.9972972972972973,
+     "silent_error": 0.0025,
+     "e2e_bal_acc": 0.9255915952672379
+    },
+    "full": {
+     "n": 400,
+     "route_acc": 1.0,
+     "flagged": 0.075,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 0.9975,
+     "acc_accepted": 0.9972972972972973,
+     "silent_error": 0.0025,
+     "e2e_bal_acc": 0.9255915952672379
+    }
+   },
+   "routed_to": {
+    "lung": 1.0
+   }
+  },
+  "internal:internal:lymphoma": {
+   "old": {
+    "n": 400,
+    "route_acc": 1.0,
+    "flagged": 0.0,
+    "silent_misroute": 0.0,
+    "n_labelled": 400,
+    "acc_all": 0.96,
+    "acc_accepted": 0.96,
+    "silent_error": 0.04,
+    "e2e_bal_acc": 0.9606027596223674
+   },
+   "new": {
+    "gate": {
+     "n": 400,
+     "route_acc": 1.0,
+     "flagged": 0.0,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 1.0,
+     "acc_accepted": 1.0,
+     "silent_error": 0.0,
+     "e2e_bal_acc": 1.0
+    },
+    "maha": {
+     "n": 400,
+     "route_acc": 1.0,
+     "flagged": 0.01,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 1.0,
+     "acc_accepted": 1.0,
+     "silent_error": 0.0,
+     "e2e_bal_acc": 0.9898937697387309
+    },
+    "energy": {
+     "n": 400,
+     "route_acc": 1.0,
+     "flagged": 0.0025,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 1.0,
+     "acc_accepted": 1.0,
+     "silent_error": 0.0,
+     "e2e_bal_acc": 0.9975308641975308
+    },
+    "guard": {
+     "n": 400,
+     "route_acc": 1.0,
+     "flagged": 0.005,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 1.0,
+     "acc_accepted": 1.0,
+     "silent_error": 0.0,
+     "e2e_bal_acc": 0.9948320413436692
+    },
+    "full": {
+     "n": 400,
+     "route_acc": 1.0,
+     "flagged": 0.005,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 1.0,
+     "acc_accepted": 1.0,
+     "silent_error": 0.0,
+     "e2e_bal_acc": 0.9948320413436692
+    }
+   },
+   "routed_to": {
+    "lymphoma": 1.0
+   }
+  },
+  "internal:internal:oral": {
+   "old": {
+    "n": 400,
+    "route_acc": 1.0,
+    "flagged": 0.0,
+    "silent_misroute": 0.0,
+    "n_labelled": 400,
+    "acc_all": 0.98,
+    "acc_accepted": 0.98,
+    "silent_error": 0.02,
+    "e2e_bal_acc": 0.9801682692307692
+   },
+   "new": {
+    "gate": {
+     "n": 400,
+     "route_acc": 1.0,
+     "flagged": 0.0,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 0.9925,
+     "acc_accepted": 0.9925,
+     "silent_error": 0.0075,
+     "e2e_bal_acc": 0.992588141025641
+    },
+    "maha": {
+     "n": 400,
+     "route_acc": 1.0,
+     "flagged": 0.02,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 0.9925,
+     "acc_accepted": 0.9923469387755102,
+     "silent_error": 0.0075,
+     "e2e_bal_acc": 0.9721554487179487
+    },
+    "energy": {
+     "n": 400,
+     "route_acc": 1.0,
+     "flagged": 0.065,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 0.9925,
+     "acc_accepted": 0.9919786096256684,
+     "silent_error": 0.0075,
+     "e2e_bal_acc": 0.9258814102564102
+    },
+    "guard": {
+     "n": 400,
+     "route_acc": 1.0,
+     "flagged": 0.0225,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 0.9925,
+     "acc_accepted": 0.9923273657289002,
+     "silent_error": 0.0075,
+     "e2e_bal_acc": 0.9693509615384616
+    },
+    "full": {
+     "n": 400,
+     "route_acc": 1.0,
+     "flagged": 0.0225,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 0.9925,
+     "acc_accepted": 0.9923273657289002,
+     "silent_error": 0.0075,
+     "e2e_bal_acc": 0.9693509615384616
+    }
+   },
+   "routed_to": {
+    "oral": 1.0
+   }
+  },
+  "internal:internal:ovarian": {
+   "old": {
+    "n": 400,
+    "route_acc": 0.965,
+    "flagged": 0.05,
+    "silent_misroute": 0.0175,
+    "n_labelled": 400,
+    "acc_all": 0.8475,
+    "acc_accepted": 0.8605263157894737,
+    "silent_error": 0.1325,
+    "e2e_bal_acc": 0.8074635589900238
+   },
+   "new": {
+    "gate": {
+     "n": 400,
+     "route_acc": 0.9675,
+     "flagged": 0.0175,
+     "silent_misroute": 0.02,
+     "n_labelled": 400,
+     "acc_all": 0.795,
+     "acc_accepted": 0.806615776081425,
+     "silent_error": 0.19,
+     "e2e_bal_acc": 0.7968299037150587
+    },
+    "maha": {
+     "n": 400,
+     "route_acc": 0.9675,
+     "flagged": 0.19,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 0.795,
+     "acc_accepted": 0.8209876543209876,
+     "silent_error": 0.145,
+     "e2e_bal_acc": 0.6347549217340404
+    },
+    "energy": {
+     "n": 400,
+     "route_acc": 0.9675,
+     "flagged": 0.22,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 0.795,
+     "acc_accepted": 0.8493589743589743,
+     "silent_error": 0.1175,
+     "e2e_bal_acc": 0.639535746075661
+    },
+    "guard": {
+     "n": 400,
+     "route_acc": 0.9675,
+     "flagged": 0.17,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 0.795,
+     "acc_accepted": 0.8313253012048193,
+     "silent_error": 0.14,
+     "e2e_bal_acc": 0.6735344460329282
+    },
+    "full": {
+     "n": 400,
+     "route_acc": 0.9675,
+     "flagged": 0.17,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 0.795,
+     "acc_accepted": 0.8313253012048193,
+     "silent_error": 0.14,
+     "e2e_bal_acc": 0.6735344460329282
+    }
+   },
+   "routed_to": {
+    "ovarian": 0.968,
+    "gastric": 0.02,
+    "colon": 0.013
+   }
+  },
+  "internal:internal:pancreatic": {
+   "old": {
+    "n": 5,
+    "route_acc": 1.0,
+    "flagged": 0.0,
+    "silent_misroute": 0.0
+   },
+   "new": {
+    "gate": {
+     "n": 5,
+     "route_acc": 1.0,
+     "flagged": 0.0,
+     "silent_misroute": 0.0
+    },
+    "maha": {
+     "n": 5,
+     "route_acc": 1.0,
+     "flagged": 0.6,
+     "silent_misroute": 0.0
+    },
+    "energy": {
+     "n": 5,
+     "route_acc": 1.0,
+     "flagged": 0.0,
+     "silent_misroute": 0.0
+    },
+    "guard": {
+     "n": 5,
+     "route_acc": 1.0,
+     "flagged": 0.0,
+     "silent_misroute": 0.0
+    },
+    "full": {
+     "n": 5,
+     "route_acc": 1.0,
+     "flagged": 0.0,
+     "silent_misroute": 0.0
+    }
+   },
+   "routed_to": {
+    "pancreatic": 1.0
+   }
+  },
+  "internal:internal:skin": {
+   "old": {
+    "n": 400,
+    "route_acc": 1.0,
+    "flagged": 0.0,
+    "silent_misroute": 0.0,
+    "n_labelled": 400,
+    "acc_all": 0.97,
+    "acc_accepted": 0.97,
+    "silent_error": 0.03,
+    "e2e_bal_acc": 0.9702037854238663
+   },
+   "new": {
+    "gate": {
+     "n": 400,
+     "route_acc": 1.0,
+     "flagged": 0.005,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 0.9325,
+     "acc_accepted": 0.9321608040201005,
+     "silent_error": 0.0675,
+     "e2e_bal_acc": 0.9322435154245685
+    },
+    "maha": {
+     "n": 400,
+     "route_acc": 1.0,
+     "flagged": 0.0475,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 0.9325,
+     "acc_accepted": 0.9291338582677166,
+     "silent_error": 0.0675,
+     "e2e_bal_acc": 0.8902608665028013
+    },
+    "energy": {
+     "n": 400,
+     "route_acc": 1.0,
+     "flagged": 0.0925,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 0.9325,
+     "acc_accepted": 0.9256198347107438,
+     "silent_error": 0.0675,
+     "e2e_bal_acc": 0.8395971114907992
+    },
+    "guard": {
+     "n": 400,
+     "route_acc": 1.0,
+     "flagged": 0.0425,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 0.9325,
+     "acc_accepted": 0.9295039164490861,
+     "silent_error": 0.0675,
+     "e2e_bal_acc": 0.8943769143816356
+    },
+    "full": {
+     "n": 400,
+     "route_acc": 1.0,
+     "flagged": 0.0425,
+     "silent_misroute": 0.0,
+     "n_labelled": 400,
+     "acc_all": 0.9325,
+     "acc_accepted": 0.9295039164490861,
+     "silent_error": 0.0675,
+     "e2e_bal_acc": 0.8943769143816356
+    }
+   },
+   "routed_to": {
+    "skin": 1.0
+   }
+  },
+  "internal:internal:thyroid": {
+   "old": {
+    "n": 166,
+    "route_acc": 1.0,
+    "flagged": 0.21084337349397592,
+    "silent_misroute": 0.0,
+    "n_labelled": 166,
+    "acc_all": 0.891566265060241,
+    "acc_accepted": 0.8778625954198473,
+    "silent_error": 0.0963855421686747,
+    "e2e_bal_acc": 0.6995535714285714
+   },
+   "new": {
+    "gate": {
+     "n": 166,
+     "route_acc": 1.0,
+     "flagged": 0.006024096385542169,
+     "silent_misroute": 0.0,
+     "n_labelled": 166,
+     "acc_all": 0.7771084337349398,
+     "acc_accepted": 0.7818181818181819,
+     "silent_error": 0.21686746987951808,
+     "e2e_bal_acc": 0.743452380952381
+    },
+    "maha": {
+     "n": 166,
+     "route_acc": 1.0,
+     "flagged": 0.012048192771084338,
+     "silent_misroute": 0.0,
+     "n_labelled": 166,
+     "acc_all": 0.7771084337349398,
+     "acc_accepted": 0.774390243902439,
+     "silent_error": 0.22289156626506024,
+     "e2e_bal_acc": 0.7311011904761904
+    },
+    "energy": {
+     "n": 166,
+     "route_acc": 1.0,
+     "flagged": 0.024096385542168676,
+     "silent_misroute": 0.0,
+     "n_labelled": 166,
+     "acc_all": 0.7771084337349398,
+     "acc_accepted": 0.7777777777777778,
+     "silent_error": 0.21686746987951808,
+     "e2e_bal_acc": 0.7258928571428571
+    },
+    "guard": {
+     "n": 166,
+     "route_acc": 1.0,
+     "flagged": 0.018072289156626505,
+     "silent_misroute": 0.0,
+     "n_labelled": 166,
+     "acc_all": 0.7771084337349398,
+     "acc_accepted": 0.7730061349693251,
+     "silent_error": 0.22289156626506024,
+     "e2e_bal_acc": 0.7258928571428571
+    },
+    "full": {
+     "n": 166,
+     "route_acc": 1.0,
+     "flagged": 0.024096385542168676,
+     "silent_misroute": 0.0,
+     "n_labelled": 166,
+     "acc_all": 0.7771084337349398,
+     "acc_accepted": 0.7777777777777778,
+     "silent_error": 0.21686746987951808,
+     "e2e_bal_acc": 0.7258928571428571
+    }
+   },
+   "routed_to": {
+    "thyroid": 1.0
+   }
+  },
+  "synthetic: Gaussian noise": {
+   "new": {
+    "gate": {
+     "n": 200,
+     "flagged": 0.775
+    },
+    "maha": {
+     "n": 200,
+     "flagged": 1.0
+    },
+    "energy": {
+     "n": 200,
+     "flagged": 1.0
+    },
+    "guard": {
+     "n": 200,
+     "flagged": 1.0
+    },
+    "full": {
+     "n": 200,
+     "flagged": 1.0
+    }
+   }
+  },
+  "synthetic: solid colour": {
+   "new": {
+    "gate": {
+     "n": 200,
+     "flagged": 0.025
+    },
+    "maha": {
+     "n": 200,
+     "flagged": 0.68
+    },
+    "energy": {
+     "n": 200,
+     "flagged": 1.0
+    },
+    "guard": {
+     "n": 200,
+     "flagged": 0.855
+    },
+    "full": {
+     "n": 200,
+     "flagged": 0.855
+    }
+   }
+  },
+  "synthetic: text-like page": {
+   "new": {
+    "gate": {
+     "n": 200,
+     "flagged": 0.0
+    },
+    "maha": {
+     "n": 200,
+     "flagged": 0.01
+    },
+    "energy": {
+     "n": 200,
+     "flagged": 0.005
+    },
+    "guard": {
+     "n": 200,
+     "flagged": 0.0
+    },
+    "full": {
+     "n": 200,
+     "flagged": 0.0
+    }
+   }
+  }
+ },
+ "spec_only": {
+  "HOLDOUT external:nih:pancreatic": {
+   "new": {
+    "n": 246,
+    "bal_set_acc": 0.491869918699187
+   },
+   "old": {
+    "n": 246,
+    "bal_set_acc": 0.0
+   }
+  }
+ },
+ "timing": {
+  "gateway_plus_guard_ms": 23.035287857055664,
+  "specialist_ms": 19.528627395629883
+ },
+ "xai": {
+  "bladder": {
+   "n": 40,
+   "deletion_cam": 0.6117281266341451,
+   "deletion_random": 0.8165839165532962,
+   "insertion_cam": 0.726281554110814,
+   "insertion_random": 0.8166773286620156,
+   "sanity_abs_rho": 0.11708508824403323,
+   "faithful_frac": 0.6
+  },
+  "blood": {
+   "n": 40,
+   "deletion_cam": 0.8792604982778428,
+   "deletion_random": 0.8209427262055687,
+   "insertion_cam": 0.9193792910911143,
+   "insertion_random": 0.8461852990910412,
+   "sanity_abs_rho": 0.1306641750264018,
+   "faithful_frac": 0.325
+  },
+  "brain_2d": {
+   "n": 40,
+   "deletion_cam": 0.46742037451942453,
+   "deletion_random": 0.7915152428161819,
+   "insertion_cam": 0.8760183823723346,
+   "insertion_random": 0.7852580856154672,
+   "sanity_abs_rho": 0.1788770779342092,
+   "faithful_frac": 0.925
+  },
+  "breast": {
+   "n": 40,
+   "deletion_cam": 0.8187003907505425,
+   "deletion_random": 0.9090352049171925,
+   "insertion_cam": 0.9222374007785692,
+   "insertion_random": 0.8991725302096455,
+   "sanity_abs_rho": 0.09654567952448359,
+   "faithful_frac": 0.75
+  },
+  "cervical": {
+   "n": 40,
+   "deletion_cam": 0.7334929668928962,
+   "deletion_random": 0.7156879868285031,
+   "insertion_cam": 0.899755778278457,
+   "insertion_random": 0.7213430776793975,
+   "sanity_abs_rho": 0.1645060182148974,
+   "faithful_frac": 0.4
+  },
+  "colon": {
+   "n": 40,
+   "deletion_cam": 0.8352172289774753,
+   "deletion_random": 0.9575865314416587,
+   "insertion_cam": 0.9428483615447767,
+   "insertion_random": 0.9528798821372911,
+   "sanity_abs_rho": 0.11263723037739859,
+   "faithful_frac": 0.975
+  },
+  "esophageal": {
+   "n": 40,
+   "deletion_cam": 0.9483233538419009,
+   "deletion_random": 0.9565851756259798,
+   "insertion_cam": 0.968587780771777,
+   "insertion_random": 0.9544801993183792,
+   "sanity_abs_rho": 0.11488859384386178,
+   "faithful_frac": 0.2
+  },
+  "gastric": {
+   "n": 40,
+   "deletion_cam": 0.3434314889451489,
+   "deletion_random": 0.46024693444045256,
+   "insertion_cam": 0.6511558318687604,
+   "insertion_random": 0.4525885332223261,
+   "sanity_abs_rho": 0.19440571272463975,
+   "faithful_frac": 0.775
+  },
+  "kidney": {
+   "n": 40,
+   "deletion_cam": 0.7299951252760366,
+   "deletion_random": 0.7965424037147313,
+   "insertion_cam": 0.8486648133797571,
+   "insertion_random": 0.785735754283378,
+   "sanity_abs_rho": 0.13618623385399994,
+   "faithful_frac": 0.75
+  },
+  "lung": {
+   "n": 40,
+   "deletion_cam": 0.8891018343854229,
+   "deletion_random": 0.876639702332206,
+   "insertion_cam": 0.9578342531546952,
+   "insertion_random": 0.8873079239632935,
+   "sanity_abs_rho": 0.11950023332219017,
+   "faithful_frac": 0.425
+  },
+  "lymphoma": {
+   "n": 40,
+   "deletion_cam": 0.7988303776122629,
+   "deletion_random": 0.8465353168407456,
+   "insertion_cam": 0.8636816782201642,
+   "insertion_random": 0.8603407793375663,
+   "sanity_abs_rho": 0.1390354861796581,
+   "faithful_frac": 0.675
+  },
+  "oral": {
+   "n": 40,
+   "deletion_cam": 0.7946416477747261,
+   "deletion_random": 0.8041875708894803,
+   "insertion_cam": 0.933341501576826,
+   "insertion_random": 0.7824851523600518,
+   "sanity_abs_rho": 0.13253301185818758,
+   "faithful_frac": 0.65
+  },
+  "ovarian": {
+   "n": 40,
+   "deletion_cam": 0.5312910881843418,
+   "deletion_random": 0.6314358939407393,
+   "insertion_cam": 0.79458491239883,
+   "insertion_random": 0.6213159772781656,
+   "sanity_abs_rho": 0.13795841079631388,
+   "faithful_frac": 0.675
+  },
+  "pancreatic": {
+   "n": 40,
+   "deletion_cam": 0.5054230392233003,
+   "deletion_random": 0.7224818956218659,
+   "insertion_cam": 0.8220364971365779,
+   "insertion_random": 0.739605062882416,
+   "sanity_abs_rho": 0.11982622766200576,
+   "faithful_frac": 0.85
+  },
+  "skin": {
+   "n": 40,
+   "deletion_cam": 0.6379406705033034,
+   "deletion_random": 0.7722409941842779,
+   "insertion_cam": 0.8558244798083324,
+   "insertion_random": 0.7694905376581009,
+   "sanity_abs_rho": 0.1373773883234673,
+   "faithful_frac": 0.725
+  },
+  "thyroid": {
+   "n": 40,
+   "deletion_cam": 0.6448069043869619,
+   "deletion_random": 0.791985242933035,
+   "insertion_cam": 0.8639329238794744,
+   "insertion_random": 0.7965674199275673,
+   "sanity_abs_rho": 0.12231432108587262,
+   "faithful_frac": 0.875
+  }
+ },
+ "localisation": {
+  "skin": {
+   "n": 150,
+   "errors": 0,
+   "dice_cam": 0.16648171262765132,
+   "pointing_game": 0.62,
+   "dice_cam_box_medsam": 0.18406867793404136,
+   "dice_gt_box_medsam": 0.8693018509204217
+  },
+  "kidney": {
+   "n": 149,
+   "errors": 0,
+   "dice_cam": 0.22077537209888404,
+   "pointing_game": 0.18791946308724833,
+   "dice_cam_box_medsam": 0.21373736516201455,
+   "dice_gt_box_medsam": 0.7242428089612231
+  },
+  "esophageal": {
+   "n": 126,
+   "errors": 0,
+   "dice_cam": 0.10340557492497233,
+   "pointing_game": 0.25396825396825395,
+   "dice_cam_box_medsam": 0.09345716395324816,
+   "dice_gt_box_medsam": 0.7093963367791797
+  },
+  "thyroid": {
+   "n": 150,
+   "errors": 0,
+   "dice_cam": 0.1169062552274472,
+   "pointing_game": 0.32,
+   "dice_cam_box_medsam": 0.11930918109643651,
+   "dice_gt_box_medsam": 0.7789001498765401
+  }
+ },
+ "e2_merged": {
+  "pancreatic": {
+   "train": {
+    "val": 0.729810298102981,
+    "T": 2.525900029828266,
+    "qhat": 0.7273159623146057,
+    "fusion_w": 0.0,
+    "log": [
+     {
+      "epoch": 0,
+      "loss": 0.7336385382546319,
+      "val": 0.5579945799457995,
+      "sec": 50.26838970184326
+     },
+     {
+      "epoch": 1,
+      "loss": 0.6857186035504417,
+      "val": 0.618360433604336,
+      "sec": 29.202519416809082
+     },
+     {
+      "epoch": 2,
+      "loss": 0.6229319544065566,
+      "val": 0.6762872628726286,
+      "sec": 27.424520015716553
+     },
+     {
+      "epoch": 3,
+      "loss": 0.5856374937390524,
+      "val": 0.6640243902439025,
+      "sec": 27.131519079208374
+     },
+     {
+      "epoch": 4,
+      "loss": 0.49847505395374603,
+      "val": 0.6246612466124661,
+      "sec": 28.178652048110962
+     },
+     {
+      "epoch": 5,
+      "loss": 0.45946986760411945,
+      "val": 0.7134823848238483,
+      "sec": 28.41719675064087
+     },
+     {
+      "epoch": 6,
+      "loss": 0.38297046602718415,
+      "val": 0.6553523035230352,
+      "sec": 27.57367706298828
+     },
+     {
+      "epoch": 7,
+      "loss": 0.3379531493262639,
+      "val": 0.7045392953929539,
+      "sec": 27.8725528717041
+     },
+     {
+      "epoch": 8,
+      "loss": 0.2761011521021525,
+      "val": 0.729810298102981,
+      "sec": 27.70995020866394
+     },
+     {
+      "epoch": 9,
+      "loss": 0.2626324248692346,
+      "val": 0.7267615176151762,
+      "sec": 27.766722440719604
+     },
+     {
+      "epoch": 10,
+      "loss": 0.24201486957451654,
+      "val": 0.7264227642276422,
+      "sec": 27.787192821502686
+     },
+     {
+      "epoch": 11,
+      "loss": 0.24086111925897144,
+      "val": 0.7158536585365853,
+      "sec": 27.949426651000977
+     }
+    ]
+   },
+   "sets": {
+    "internal": {
+     "new": {
+      "n": 5,
+      "bal_set_acc": 0.0,
+      "auc": 0.0,
+      "set_cov": 1.0,
+      "set_size": 2.0
+     },
+     "old": {
+      "n": 5,
+      "bal_set_acc": 1.0,
+      "auc": 1.0
+     },
+     "old_contaminated": true
+    },
+    "msd_task07": {
+     "new": {
+      "n": 626,
+      "bal_set_acc": 0.7661472182020127,
+      "macro_f1": 0.7555562786762553,
+      "auc": 0.8576060493868713,
+      "set_cov": 0.9456869009584664,
+      "set_size": 1.439297124600639
+     },
+     "old": {
+      "n": 626,
+      "bal_set_acc": 0.5,
+      "macro_f1": 0.39399806389157793,
+      "auc": 0.46532148586943106
+     },
+     "old_contaminated": false
+    },
+    "HOLDOUT nih": {
+     "new": {
+      "n": 246,
+      "bal_set_acc": 0.491869918699187,
+      "set_cov": 0.8536585365853658,
+      "set_size": 1.7479674796747968
+     },
+     "old": {
+      "n": 246,
+      "bal_set_acc": 0.0
+     },
+     "old_contaminated": false
+    }
+   },
+   "robust": {
+    "clean": {
+     "new": 0.775224646983312,
+     "old": 0.5
+    },
+    "jpeg30": {
+     "new": 0.7521181001283697,
+     "old": 0.5
+    },
+    "blur": {
+     "new": 0.7844672657252888,
+     "old": 0.5
+    },
+    "downscale0.5": {
+     "new": 0.7772785622593068,
+     "old": 0.5
+    }
+   }
+  },
+  "lymphoma": {
+   "train": {
+    "val": 1.0,
+    "T": 0.30000392207706084,
+    "qhat": 4.76837158203125e-07,
+    "fusion_w": 0.0,
+    "log": [
+     {
+      "epoch": 0,
+      "loss": 0.7808638389211103,
+      "val": 0.9218530066609714,
+      "sec": 308.22931241989136
+     },
+     {
+      "epoch": 1,
+      "loss": 0.4271357742598258,
+      "val": 0.9906471732530995,
+      "sec": 150.41710472106934
+     },
+     {
+      "epoch": 2,
+      "loss": 0.2985774594617177,
+      "val": 0.9597317285036628,
+      "sec": 102.1282811164856
+     },
+     {
+      "epoch": 3,
+      "loss": 0.26061757223074694,
+      "val": 0.9995549621717846,
+      "sec": 83.77540636062622
+     },
+     {
+      "epoch": 4,
+      "loss": 0.23706571748816824,
+      "val": 0.9995549621717846,
+      "sec": 79.1505036354065
+     },
+     {
+      "epoch": 5,
+      "loss": 0.22427377427916928,
+      "val": 0.9986379516261633,
+      "sec": 79.03507399559021
+     },
+     {
+      "epoch": 6,
+      "loss": 0.20443078579313784,
+      "val": 0.9967904630903255,
+      "sec": 79.00702476501465
+     },
+     {
+      "epoch": 7,
+      "loss": 0.1911786543317588,
+      "val": 1.0,
+      "sec": 78.5189802646637
+     },
+     {
+      "epoch": 8,
+      "loss": 0.18932550966021527,
+      "val": 1.0,
+      "sec": 79.09134864807129
+     },
+     {
+      "epoch": 9,
+      "loss": 0.1808419788637793,
+      "val": 1.0,
+      "sec": 78.26378536224365
+     },
+     {
+      "epoch": 10,
+      "loss": 0.17962752085134207,
+      "val": 1.0,
+      "sec": 78.41792631149292
+     },
+     {
+      "epoch": 11,
+      "loss": 0.18006851784436098,
+      "val": 1.0,
+      "sec": 78.34284281730652
+     }
+    ]
+   },
+   "sets": {
+    "internal": {
+     "new": {
+      "n": 1500,
+      "bal_set_acc": 1.0,
+      "macro_f1": 1.0,
+      "set_cov": 1.0,
+      "set_size": 1.0
+     },
+     "old": {
+      "n": 1500,
+      "bal_set_acc": 0.9675055793068216,
+      "macro_f1": 0.9677115691052225
+     },
+     "old_contaminated": true
+    }
+   },
+   "robust": {
+    "clean": {
+     "new": 1.0,
+     "old": 0.9695228143504006
+    },
+    "stain\u2192colon-ext": {
+     "new": 0.8798676419366075,
+     "old": 0.7721351445489377
+    },
+    "stain\u2192lung-ext": {
+     "new": 0.5921146517062151,
+     "old": 0.40052246603970737
+    },
+    "jpeg30": {
+     "new": 0.9907031479847014,
+     "old": 0.5402298850574713
+    },
+    "blur": {
+     "new": 0.9909090909090909,
+     "old": 0.6969115324656001
+    },
+    "downscale0.5": {
+     "new": 1.0,
+     "old": 0.8482819490519523
+    }
+   }
+  },
+  "skin": {
+   "train": {
+    "val": 0.7689263243494027,
+    "T": 1.0178471554039803,
+    "qhat": 0.3911781311035156,
+    "fusion_w": 0.25,
+    "log": [
+     {
+      "epoch": 0,
+      "loss": 1.336268875254206,
+      "val": 0.7167477716400857,
+      "sec": 361.16703724861145
+     },
+     {
+      "epoch": 1,
+      "loss": 0.7397378388657627,
+      "val": 0.6991016915007047,
+      "sec": 212.64516806602478
+     },
+     {
+      "epoch": 2,
+      "loss": 0.5970824960484562,
+      "val": 0.743684172022693,
+      "sec": 176.33882021903992
+     },
+     {
+      "epoch": 3,
+      "loss": 0.5118579130215817,
+      "val": 0.7269081546816567,
+      "sec": 168.4767050743103
+     },
+     {
+      "epoch": 4,
+      "loss": 0.4645654751234744,
+      "val": 0.7490691963297711,
+      "sec": 161.38601899147034
+     },
+     {
+      "epoch": 5,
+      "loss": 0.4206221961831472,
+      "val": 0.747073270293588,
+      "sec": 163.5944857597351
+     },
+     {
+      "epoch": 6,
+      "loss": 0.38735555525285653,
+      "val": 0.7519946805249127,
+      "sec": 163.95190906524658
+     },
+     {
+      "epoch": 7,
+      "loss": 0.37337989907666863,
+      "val": 0.7552887559016795,
+      "sec": 152.35417103767395
+     },
+     {
+      "epoch": 8,
+      "loss": 0.35169636287603034,
+      "val": 0.7656339545716839,
+      "sec": 156.1650106906891
+     },
+     {
+      "epoch": 9,
+      "loss": 0.3410288095474243,
+      "val": 0.7656347056744011,
+      "sec": 154.47234320640564
+     },
+     {
+      "epoch": 10,
+      "loss": 0.3354857991258782,
+      "val": 0.7689263243494027,
+      "sec": 156.5065643787384
+     },
+     {
+      "epoch": 11,
+      "loss": 0.3361793840865055,
+      "val": 0.7617247214083251,
+      "sec": 148.6906759738922
+     }
+    ]
+   },
+   "sets": {
+    "internal": {
+     "new": {
+      "n": 1500,
+      "bal_set_acc": 0.9451427825264481,
+      "macro_f1": 0.9427738767075076,
+      "set_cov": 0.9413333333333334,
+      "set_size": 1.0
+     },
+     "old": {
+      "n": 1500,
+      "bal_set_acc": 0.9758423596889283,
+      "macro_f1": 0.9743170721219381
+     },
+     "old_contaminated": true
+    },
+    "pad-ufes-20": {
+     "new": {
+      "n": 661,
+      "bal_set_acc": 0.5860759598204531,
+      "macro_f1": 0.5011386998312929,
+      "set_cov": 0.7261724659606656,
+      "set_size": 1.0
+     },
+     "old": {
+      "n": 661,
+      "bal_set_acc": 0.24207138121969252,
+      "macro_f1": 0.16136245862430681
+     },
+     "old_contaminated": false
+    }
+   },
+   "robust": {
+    "clean": {
+     "new": 0.931467453269094,
+     "old": 0.9690255291591667
+    },
+    "jpeg30": {
+     "new": 0.9396532670225558,
+     "old": 0.7374942373774352
+    },
+    "blur": {
+     "new": 0.924163392911992,
+     "old": 0.968148136025327
+    },
+    "downscale0.5": {
+     "new": 0.9271213270124943,
+     "old": 0.9795202817828548
+    }
+   }
+  },
+  "breast": {
+   "train": {
+    "val": 0.8390801006149652,
+    "T": 0.9975357640224023,
+    "qhat": 0.2979215383529663,
+    "fusion_w": 0.0,
+    "log": [
+     {
+      "epoch": 0,
+      "loss": 0.5852759099868406,
+      "val": 0.7899279460899029,
+      "sec": 355.53607392311096
+     },
+     {
+      "epoch": 1,
+      "loss": 0.5025540873946914,
+      "val": 0.8083864692295466,
+      "sec": 171.1079466342926
+     },
+     {
+      "epoch": 2,
+      "loss": 0.43590702628155786,
+      "val": 0.8198980397685535,
+      "sec": 136.8506953716278
+     },
+     {
+      "epoch": 3,
+      "loss": 0.41343364200319155,
+      "val": 0.8199898008845552,
+      "sec": 133.62330555915833
+     },
+     {
+      "epoch": 4,
+      "loss": 0.3714886214359697,
+      "val": 0.8318069820621604,
+      "sec": 130.26636004447937
+     },
+     {
+      "epoch": 5,
+      "loss": 0.34329718782241087,
+      "val": 0.8386193471171881,
+      "sec": 121.8793580532074
+     },
+     {
+      "epoch": 6,
+      "loss": 0.31509113087352497,
+      "val": 0.8360233630450171,
+      "sec": 116.9520046710968
+     },
+     {
+      "epoch": 7,
+      "loss": 0.29183117578546686,
+      "val": 0.83567788718197,
+      "sec": 111.05602669715881
+     },
+     {
+      "epoch": 8,
+      "loss": 0.2602424434868686,
+      "val": 0.833502798323452,
+      "sec": 108.02849864959717
+     },
+     {
+      "epoch": 9,
+      "loss": 0.2579271355307246,
+      "val": 0.8390801006149652,
+      "sec": 99.94396257400513
+     },
+     {
+      "epoch": 10,
+      "loss": 0.25069566950740585,
+      "val": 0.8313149153621247,
+      "sec": 97.87560272216797
+     },
+     {
+      "epoch": 11,
+      "loss": 0.23791339140699572,
+      "val": 0.830420769825122,
+      "sec": 97.01086497306824
+     }
+    ]
+   },
+   "sets": {
+    "cbis_roi": {
+     "new": {
+      "n": 1017,
+      "bal_set_acc": 0.7545807547627714,
+      "macro_f1": 0.7474037006727866,
+      "auc": 0.8412652186223355,
+      "set_cov": 0.7531956735496559,
+      "set_size": 1.0
+     },
+     "old": {
+      "n": 1017,
+      "bal_set_acc": 0.531488896978522,
+      "macro_f1": 0.4576259044344151,
+      "auc": 0.5281559681268454
+     },
+     "old_contaminated": false
+    },
+    "internal": {
+     "new": {
+      "n": 1500,
+      "bal_set_acc": 0.9414687048130551,
+      "macro_f1": 0.9516179947218669,
+      "auc": 0.9800774633340218,
+      "set_cov": 0.9593333333333334,
+      "set_size": 1.0
+     },
+     "old": {
+      "n": 1500,
+      "bal_set_acc": 0.9521070026853955,
+      "macro_f1": 0.9598019840479559,
+      "auc": 0.9872815533980582
+     },
+     "old_contaminated": true
+    }
+   },
+   "robust": {
+    "clean": {
+     "new": 0.9252766090073243,
+     "old": 0.9384447561165654
+    },
+    "jpeg30": {
+     "new": 0.9311983793049712,
+     "old": 0.6642512077294686
+    },
+    "blur": {
+     "new": 0.9336138382421693,
+     "old": 0.9215365435561789
+    },
+    "downscale0.5": {
+     "new": 0.9234065762817516,
+     "old": 0.9384447561165654
+    }
+   }
+  },
+  "kidney": {
+   "train": {
+    "val": 0.8190521889617987,
+    "T": 1.669863389926575,
+    "qhat": 0.613862156867981,
+    "fusion_w": 0.0,
+    "log": [
+     {
+      "epoch": 0,
+      "loss": 0.5587760816855603,
+      "val": 0.7210867140649082,
+      "sec": 173.54063296318054
+     },
+     {
+      "epoch": 1,
+      "loss": 0.35447966091963184,
+      "val": 0.7301665207367997,
+      "sec": 96.91141080856323
+     },
+     {
+      "epoch": 2,
+      "loss": 0.2763233706355095,
+      "val": 0.8086838925978248,
+      "sec": 77.87643814086914
+     },
+     {
+      "epoch": 3,
+      "loss": 0.22275194660367736,
+      "val": 0.7591529612590686,
+      "sec": 75.96134281158447
+     },
+     {
+      "epoch": 4,
+      "loss": 0.18438028014567961,
+      "val": 0.7659331311556403,
+      "sec": 75.37071323394775
+     },
+     {
+      "epoch": 5,
+      "loss": 0.16428935967655067,
+      "val": 0.7961783202286106,
+      "sec": 75.24614024162292
+     },
+     {
+      "epoch": 6,
+      "loss": 0.15251894577978606,
+      "val": 0.8190521889617987,
+      "sec": 75.20704197883606
+     },
+     {
+      "epoch": 7,
+      "loss": 0.13849806242499008,
+      "val": 0.8102515697115803,
+      "sec": 75.22649478912354
+     },
+     {
+      "epoch": 8,
+      "loss": 0.13292464218943953,
+      "val": 0.8072099043897304,
+      "sec": 74.56428122520447
+     },
+     {
+      "epoch": 9,
+      "loss": 0.13187778350639057,
+      "val": 0.806820114404602,
+      "sec": 74.86162209510803
+     },
+     {
+      "epoch": 10,
+      "loss": 0.12825272236782384,
+      "val": 0.8099049173123856,
+      "sec": 74.73935532569885
+     }
+    ]
+   },
+   "sets": {
+    "internal": {
+     "new": {
+      "n": 1500,
+      "bal_set_acc": 0.9806477818268604,
+      "macro_f1": 0.96577764595834,
+      "auc": 0.9986219605107353,
+      "set_cov": 0.9753333333333334,
+      "set_size": 1.0106666666666666
+     },
+     "old": {
+      "n": 1500,
+      "bal_set_acc": 1.0,
+      "macro_f1": 1.0,
+      "auc": 1.0
+     },
+     "old_contaminated": true
+    },
+    "kits23": {
+     "new": {
+      "n": 384,
+      "bal_set_acc": 0.6539808355275659,
+      "macro_f1": 0.6524791575252303,
+      "auc": 0.7212193599174788,
+      "set_cov": 0.6848958333333334,
+      "set_size": 1.046875
+     },
+     "old": {
+      "n": 384,
+      "bal_set_acc": 0.5430522001140096,
+      "macro_f1": 0.43455010462683097,
+      "auc": 0.5841770949265723
+     },
+     "old_contaminated": false
+    }
+   },
+   "robust": {
+    "clean": {
+     "new": 0.9837962962962963,
+     "old": 1.0
+    },
+    "jpeg30": {
+     "new": 0.9606481481481481,
+     "old": 1.0
+    },
+    "blur": {
+     "new": 0.9408068783068784,
+     "old": 1.0
+    },
+    "downscale0.5": {
+     "new": 0.962962962962963,
+     "old": 1.0
+    }
+   }
+  },
+  "blood": {
+   "train": {
+    "val": 0.9727272727272727,
+    "T": 0.5348853908693592,
+    "qhat": 0.0002925992012023926,
+    "fusion_w": 0.0,
+    "log": [
+     {
+      "epoch": 0,
+      "loss": 0.6771353528083089,
+      "val": 0.7535898165283432,
+      "sec": 293.8951416015625
+     },
+     {
+      "epoch": 1,
+      "loss": 0.47373858381466694,
+      "val": 0.7489006916996048,
+      "sec": 174.5210554599762
+     },
+     {
+      "epoch": 2,
+      "loss": 0.42622991534600774,
+      "val": 0.7898499258893281,
+      "sec": 136.5166482925415
+     },
+     {
+      "epoch": 3,
+      "loss": 0.3990774475127818,
+      "val": 0.8395063477669463,
+      "sec": 108.24082970619202
+     },
+     {
+      "epoch": 4,
+      "loss": 0.38269839238330544,
+      "val": 0.8490229080830533,
+      "sec": 95.50274801254272
+     },
+     {
+      "epoch": 5,
+      "loss": 0.35396188919443683,
+      "val": 0.8454545454545455,
+      "sec": 88.67493033409119
+     },
+     {
+      "epoch": 6,
+      "loss": 0.3356894683766078,
+      "val": 0.9227272727272727,
+      "sec": 83.14219188690186
+     },
+     {
+      "epoch": 7,
+      "loss": 0.32106333522193403,
+      "val": 0.9727272727272727,
+      "sec": 80.6560127735138
+     },
+     {
+      "epoch": 8,
+      "loss": 0.3147839022329055,
+      "val": 0.9496882793017456,
+      "sec": 80.54621005058289
+     },
+     {
+      "epoch": 9,
+      "loss": 0.3121086121144065,
+      "val": 0.9590909090909091,
+      "sec": 80.5860025882721
+     },
+     {
+      "epoch": 10,
+      "loss": 0.30787560711783096,
+      "val": 0.9636363636363636,
+      "sec": 80.4533360004425
+     },
+     {
+      "epoch": 11,
+      "loss": 0.30265342991754235,
+      "val": 0.9681818181818181,
+      "sec": 80.5331974029541
+     }
+    ]
+   },
+   "sets": {
+    "c-nmc": {
+     "new": {
+      "n": 195,
+      "bal_set_acc": 0.845771457337025,
+      "auc": 0.9058645859551976,
+      "set_cov": 0.8461538461538461,
+      "set_size": 1.0
+     },
+     "old": {
+      "n": 195,
+      "bal_set_acc": 0.3538887490561289,
+      "auc": 0.32041278630757614
+     },
+     "old_contaminated": false
+    },
+    "internal": {
+     "new": {
+      "n": 1500,
+      "bal_set_acc": 1.0,
+      "macro_f1": 1.0,
+      "set_cov": 1.0,
+      "set_size": 1.0
+     },
+     "old": {
+      "n": 1500,
+      "bal_set_acc": 1.0,
+      "macro_f1": 1.0
+     },
+     "old_contaminated": true
+    }
+   },
+   "robust": {
+    "clean": {
+     "new": 1.0,
+     "old": 1.0
+    },
+    "stain\u2192colon-ext": {
+     "new": 0.9210824275362319,
+     "old": 0.9938271604938271
+    },
+    "stain\u2192lung-ext": {
+     "new": 0.9303102355072463,
+     "old": 0.9927536231884058
+    },
+    "jpeg30": {
+     "new": 1.0,
+     "old": 1.0
+    },
+    "blur": {
+     "new": 1.0,
+     "old": 0.94921875
+    },
+    "downscale0.5": {
+     "new": 1.0,
+     "old": 1.0
+    }
+   }
+  },
+  "cervical": {
+   "train": {
+    "val": 1.0,
+    "T": 0.31470751256549057,
+    "qhat": 2.384185791015625e-07,
+    "fusion_w": 0.0,
+    "log": [
+     {
+      "epoch": 0,
+      "loss": 0.642129949776523,
+      "val": 0.9697864576820276,
+      "sec": 307.3220884799957
+     },
+     {
+      "epoch": 1,
+      "loss": 0.2989739520722125,
+      "val": 0.991914587534179,
+      "sec": 204.40754103660583
+     },
+     {
+      "epoch": 2,
+      "loss": 0.2582994284759085,
+      "val": 0.9927119736562787,
+      "sec": 179.97315883636475
+     },
+     {
+      "epoch": 3,
+      "loss": 0.24070238977311606,
+      "val": 0.9957464616078044,
+      "sec": 176.19675207138062
+     },
+     {
+      "epoch": 4,
+      "loss": 0.2247037101222808,
+      "val": 0.9987890520694259,
+      "sec": 167.7868435382843
+     },
+     {
+      "epoch": 5,
+      "loss": 0.21347889573459167,
+      "val": 0.9971428571428571,
+      "sec": 164.26979088783264
+     },
+     {
+      "epoch": 6,
+      "loss": 0.20531529448477617,
+      "val": 0.9987329773030708,
+      "sec": 161.98209261894226
+     },
+     {
+      "epoch": 7,
+      "loss": 0.2046033073979688,
+      "val": 1.0,
+      "sec": 159.684907913208
+     },
+     {
+      "epoch": 8,
+      "loss": 0.20241062370050383,
+      "val": 0.9998628257887517,
+      "sec": 159.18476843833923
+     },
+     {
+      "epoch": 9,
+      "loss": 0.2004607360226562,
+      "val": 0.9998628257887517,
+      "sec": 156.4834110736847
+     },
+     {
+      "epoch": 10,
+      "loss": 0.19868445504142576,
+      "val": 1.0,
+      "sec": 160.37727665901184
+     },
+     {
+      "epoch": 11,
+      "loss": 0.20057582388441247,
+      "val": 1.0,
+      "sec": 157.5976526737213
+     }
+    ]
+   },
+   "sets": {
+    "internal": {
+     "new": {
+      "n": 1500,
+      "bal_set_acc": 1.0,
+      "macro_f1": 1.0,
+      "set_cov": 1.0,
+      "set_size": 1.0
+     },
+     "old": {
+      "n": 1500,
+      "bal_set_acc": 1.0,
+      "macro_f1": 1.0
+     },
+     "old_contaminated": true
+    },
+    "lbc": {
+     "new": {
+      "n": 299,
+      "bal_set_acc": 1.0,
+      "auc": 1.0,
+      "set_cov": 1.0,
+      "set_size": 1.0
+     },
+     "old": {
+      "n": 299,
+      "bal_set_acc": 0.39021739130434785,
+      "auc": 0.3891068052930057
+     },
+     "old_contaminated": false
+    }
+   },
+   "robust": {
+    "clean": {
+     "new": 1.0,
+     "old": 1.0
+    },
+    "stain\u2192colon-ext": {
+     "new": 0.8345114644876286,
+     "old": 0.9795918367346939
+    },
+    "stain\u2192lung-ext": {
+     "new": 0.7583522881059828,
+     "old": 0.9752287121745249
+    },
+    "jpeg30": {
+     "new": 1.0,
+     "old": 1.0
+    },
+    "blur": {
+     "new": 0.9832393222541006,
+     "old": 1.0
+    },
+    "downscale0.5": {
+     "new": 1.0,
+     "old": 1.0
+    }
+   }
+  },
+  "colon": {
+   "train": {
+    "val": 1.0,
+    "T": 0.3000724591860435,
+    "qhat": 7.152557373046875e-07,
+    "fusion_w": 0.0,
+    "log": [
+     {
+      "epoch": 0,
+      "loss": 0.2852381334067827,
+      "val": 0.9699588477366254,
+      "sec": 153.75315356254578
+     },
+     {
+      "epoch": 1,
+      "loss": 0.171045376279627,
+      "val": 0.9966666666666667,
+      "sec": 84.73728251457214
+     },
+     {
+      "epoch": 2,
+      "loss": 0.14098884156310415,
+      "val": 0.9983333333333333,
+      "sec": 77.05554175376892
+     },
+     {
+      "epoch": 3,
+      "loss": 0.14008956451911525,
+      "val": 0.9925587415372361,
+      "sec": 76.40122318267822
+     },
+     {
+      "epoch": 4,
+      "loss": 0.1322885553341314,
+      "val": 1.0,
+      "sec": 76.06884741783142
+     },
+     {
+      "epoch": 5,
+      "loss": 0.1306530839976776,
+      "val": 1.0,
+      "sec": 76.06792831420898
+     },
+     {
+      "epoch": 6,
+      "loss": 0.12355950497180583,
+      "val": 1.0,
+      "sec": 75.76772809028625
+     },
+     {
+      "epoch": 7,
+      "loss": 0.12308594256819012,
+      "val": 1.0,
+      "sec": 75.65710473060608
+     },
+     {
+      "epoch": 8,
+      "loss": 0.12287559741771364,
+      "val": 1.0,
+      "sec": 75.24816560745239
+     }
+    ]
+   },
+   "sets": {
+    "crc-val-he-7k": {
+     "new": {
+      "n": 563,
+      "bal_set_acc": 0.9955555555555555,
+      "macro_f1": 0.9962929308891698,
+      "auc": 0.9999605522682447,
+      "set_cov": 0.9964476021314387,
+      "set_size": 1.0
+     },
+     "old": {
+      "n": 563,
+      "bal_set_acc": 0.7851939513477975,
+      "macro_f1": 0.7999202204815782,
+      "auc": 0.8669428007889547
+     },
+     "old_contaminated": false
+    },
+    "internal": {
+     "new": {
+      "n": 1444,
+      "bal_set_acc": 1.0,
+      "macro_f1": 1.0,
+      "auc": 1.0,
+      "set_cov": 1.0,
+      "set_size": 1.0
+     },
+     "old": {
+      "n": 1444,
+      "bal_set_acc": 0.9977908689248896,
+      "macro_f1": 0.9979145153486759,
+      "auc": 0.9977908689248896
+     },
+     "old_contaminated": true
+    }
+   },
+   "robust": {
+    "clean": {
+     "new": 1.0,
+     "old": 0.9966442953020134
+    },
+    "stain\u2192colon-ext": {
+     "new": 0.9966887417218543,
+     "old": 0.9966442953020134
+    },
+    "stain\u2192lung-ext": {
+     "new": 1.0,
+     "old": 0.9966442953020134
+    },
+    "jpeg30": {
+     "new": 1.0,
+     "old": 0.9966442953020134
+    },
+    "blur": {
+     "new": 1.0,
+     "old": 0.9932885906040269
+    },
+    "downscale0.5": {
+     "new": 1.0,
+     "old": 1.0
+    }
+   }
+  },
+  "lung": {
+   "train": {
+    "val": 0.9993297587131367,
+    "T": 0.5246933470093819,
+    "qhat": 0.00031256675720214844,
+    "fusion_w": 0.0,
+    "log": [
+     {
+      "epoch": 0,
+      "loss": 0.2322744314659791,
+      "val": 0.9902289939585625,
+      "sec": 178.2918677330017
+     },
+     {
+      "epoch": 1,
+      "loss": 0.14603362506233067,
+      "val": 0.9694700460829493,
+      "sec": 90.3518500328064
+     },
+     {
+      "epoch": 2,
+      "loss": 0.1333974358816463,
+      "val": 0.9919354838709677,
+      "sec": 76.86037969589233
+     },
+     {
+      "epoch": 3,
+      "loss": 0.1283226079610457,
+      "val": 0.9979892761394102,
+      "sec": 77.3228759765625
+     },
+     {
+      "epoch": 4,
+      "loss": 0.12582012396081385,
+      "val": 0.9988479262672811,
+      "sec": 75.66994214057922
+     },
+     {
+      "epoch": 5,
+      "loss": 0.1226187570087881,
+      "val": 0.9959677419354839,
+      "sec": 75.50543332099915
+     },
+     {
+      "epoch": 6,
+      "loss": 0.12074783444404602,
+      "val": 0.993663594470046,
+      "sec": 75.4364550113678
+     },
+     {
+      "epoch": 7,
+      "loss": 0.12140783290547061,
+      "val": 0.9993297587131367,
+      "sec": 75.20210266113281
+     },
+     {
+      "epoch": 8,
+      "loss": 0.11855545662433269,
+      "val": 0.9994239631336406,
+      "sec": 75.16439723968506
+     },
+     {
+      "epoch": 9,
+      "loss": 0.11855882949319231,
+      "val": 0.9994239631336406,
+      "sec": 74.84362769126892
+     },
+     {
+      "epoch": 10,
+      "loss": 0.11904536286391408,
+      "val": 0.9988479262672811,
+      "sec": 75.10495924949646
+     },
+     {
+      "epoch": 11,
+      "loss": 0.11782431153647871,
+      "val": 0.9988479262672811,
+      "sec": 75.03139567375183
+     }
+    ]
+   },
+   "sets": {
+    "internal": {
+     "new": {
+      "n": 1500,
+      "bal_set_acc": 0.9959573890842319,
+      "macro_f1": 0.9959573890842319,
+      "auc": 0.9998742298826205,
+      "set_cov": 0.996,
+      "set_size": 1.0
+     },
+     "old": {
+      "n": 1500,
+      "bal_set_acc": 0.9925705794947994,
+      "macro_f1": 0.9932526773376325,
+      "auc": 0.9999802361244118
+     },
+     "old_contaminated": true
+    },
+    "HOLDOUT lunghist700": {
+     "new": {
+      "n": 431,
+      "bal_set_acc": 0.5588221381267738,
+      "macro_f1": 0.5185623234115251,
+      "auc": 0.7535596026490067,
+      "set_cov": 0.6844547563805105,
+      "set_size": 1.0
+     },
+     "old": {
+      "n": 431,
+      "bal_set_acc": 0.6792218543046358,
+      "macro_f1": 0.6881551060655537,
+      "auc": 0.8007568590350047
+     },
+     "old_contaminated": false
+    }
+   },
+   "robust": {
+    "clean": {
+     "new": 0.9902597402597403,
+     "old": 0.9924242424242424
+    },
+    "stain\u2192colon-ext": {
+     "new": 0.9843073593073592,
+     "old": 0.989448051948052
+    },
+    "stain\u2192lung-ext": {
+     "new": 0.9813311688311688,
+     "old": 0.9872835497835497
+    },
+    "jpeg30": {
+     "new": 0.9872835497835497,
+     "old": 0.9753787878787878
+    },
+    "blur": {
+     "new": 0.9797077922077921,
+     "old": 0.9583333333333333
+    },
+    "downscale0.5": {
+     "new": 0.9826839826839827,
+     "old": 0.9753787878787878
+    }
+   }
+  },
+  "ovarian": {
+   "train": {
+    "val": 0.9002019787005887,
+    "T": 0.9564377858715095,
+    "qhat": 0.8121058344841003,
+    "fusion_w": 0.25,
+    "log": [
+     {
+      "epoch": 0,
+      "loss": 1.1392716937754528,
+      "val": 0.6895406585514927,
+      "sec": 188.14124250411987
+     },
+     {
+      "epoch": 1,
+      "loss": 0.829936140991119,
+      "val": 0.7834856382479647,
+      "sec": 100.93674421310425
+     },
+     {
+      "epoch": 2,
+      "loss": 0.7121637564107596,
+      "val": 0.8189584598262476,
+      "sec": 93.83309006690979
+     },
+     {
+      "epoch": 3,
+      "loss": 0.6419159992631659,
+      "val": 0.8358492435682972,
+      "sec": 88.09600782394409
+     },
+     {
+      "epoch": 4,
+      "loss": 0.6006994899137911,
+      "val": 0.8490382099058351,
+      "sec": 85.74738574028015
+     },
+     {
+      "epoch": 5,
+      "loss": 0.564335498824177,
+      "val": 0.8623916547260744,
+      "sec": 85.7705602645874
+     },
+     {
+      "epoch": 6,
+      "loss": 0.5307195012468889,
+      "val": 0.8993192431568874,
+      "sec": 82.9831371307373
+     },
+     {
+      "epoch": 7,
+      "loss": 0.49939769703939735,
+      "val": 0.9002019787005887,
+      "sec": 82.81348872184753
+     },
+     {
+      "epoch": 8,
+      "loss": 0.4885517443159977,
+      "val": 0.8903725296222647,
+      "sec": 82.05338931083679
+     },
+     {
+      "epoch": 9,
+      "loss": 0.46730678519570684,
+      "val": 0.898065001109805,
+      "sec": 81.82328605651855
+     },
+     {
+      "epoch": 10,
+      "loss": 0.4622013865106077,
+      "val": 0.8969499261691858,
+      "sec": 81.97203922271729
+     },
+     {
+      "epoch": 11,
+      "loss": 0.4714500580925539,
+      "val": 0.8970653994457949,
+      "sec": 82.11287093162537
+     }
+    ]
+   },
+   "sets": {
+    "internal": {
+     "new": {
+      "n": 1500,
+      "bal_set_acc": 0.8230919005356689,
+      "macro_f1": 0.7955750107801457,
+      "set_cov": 0.904,
+      "set_size": 1.4093333333333333
+     },
+     "old": {
+      "n": 1500,
+      "bal_set_acc": 0.8833938338527616,
+      "macro_f1": 0.8655386663040648
+     },
+     "old_contaminated": true
+    },
+    "ovarian": {
+     "new": {
+      "n": 126,
+      "bal_set_acc": 0.9193185120604476,
+      "macro_f1": 0.5547257243049177,
+      "set_cov": 0.9444444444444444,
+      "set_size": 1.3412698412698412
+     },
+     "old": {
+      "n": 126,
+      "bal_set_acc": 0.44778874496616433,
+      "macro_f1": 0.26773584905660375
+     },
+     "old_contaminated": false
+    }
+   },
+   "robust": {
+    "clean": {
+     "new": 0.8214943106878592,
+     "old": 0.9015770236737979
+    },
+    "stain\u2192colon-ext": {
+     "new": 0.5475423810907681,
+     "old": 0.7368994925446538
+    },
+    "stain\u2192lung-ext": {
+     "new": 0.6811734066572777,
+     "old": 0.7793094955998182
+    },
+    "jpeg30": {
+     "new": 0.7662293310680407,
+     "old": 0.7107520920424146
+    },
+    "blur": {
+     "new": 0.7570872733775961,
+     "old": 0.5557437462276171
+    },
+    "downscale0.5": {
+     "new": 0.7928008405427761,
+     "old": 0.8306345054732152
+    }
+   }
+  },
+  "bladder": {
+   "train": {
+    "val": 0.8641666666666667,
+    "T": 1.786492513948441,
+    "qhat": 0.8082606792449951,
+    "fusion_w": 0.0,
+    "log": [
+     {
+      "epoch": 0,
+      "loss": 0.680210407222471,
+      "val": 0.6555555555555556,
+      "sec": 40.79684066772461
+     },
+     {
+      "epoch": 1,
+      "loss": 0.4737300315210896,
+      "val": 0.7955555555555556,
+      "sec": 30.01282525062561
+     },
+     {
+      "epoch": 2,
+      "loss": 0.2968302881044726,
+      "val": 0.7247222222222223,
+      "sec": 28.635924816131592
+     },
+     {
+      "epoch": 3,
+      "loss": 0.2002117155540374,
+      "val": 0.7383333333333333,
+      "sec": 29.21025800704956
+     },
+     {
+      "epoch": 4,
+      "loss": 0.1674321226535305,
+      "val": 0.8225,
+      "sec": 29.23112463951111
+     },
+     {
+      "epoch": 5,
+      "loss": 0.1519056690796729,
+      "val": 0.8222222222222222,
+      "sec": 28.760151624679565
+     },
+     {
+      "epoch": 6,
+      "loss": 0.13909576905350532,
+      "val": 0.8641666666666667,
+      "sec": 29.13072395324707
+     },
+     {
+      "epoch": 7,
+      "loss": 0.129981278652145,
+      "val": 0.8452777777777778,
+      "sec": 28.892096281051636
+     },
+     {
+      "epoch": 8,
+      "loss": 0.12623142967781714,
+      "val": 0.8438888888888889,
+      "sec": 28.80444025993347
+     },
+     {
+      "epoch": 9,
+      "loss": 0.12624021595524204,
+      "val": 0.8372222222222223,
+      "sec": 28.927570581436157
+     },
+     {
+      "epoch": 10,
+      "loss": 0.12408076358898994,
+      "val": 0.8574999999999999,
+      "sec": 28.539812803268433
+     }
+    ]
+   },
+   "sets": {
+    "internal": {
+     "new": {
+      "n": 249,
+      "bal_set_acc": 0.7917425819885476,
+      "macro_f1": 0.7830450496966568,
+      "auc": 0.8926665799062988,
+      "set_cov": 0.8594377510040161,
+      "set_size": 1.144578313253012
+     },
+     "old": {
+      "n": 249,
+      "bal_set_acc": 0.9366215512753774,
+      "macro_f1": 0.9388717042274267,
+      "auc": 0.9468375845913587
+     },
+     "old_contaminated": true
+    }
+   },
+   "robust": {
+    "clean": {
+     "new": 0.7917425819885476,
+     "old": 0.9366215512753774
+    },
+    "jpeg30": {
+     "new": 0.8108732431025507,
+     "old": 0.892373763664758
+    },
+    "blur": {
+     "new": 0.7696186881832379,
+     "old": 0.6407470067673087
+    },
+    "downscale0.5": {
+     "new": 0.7843896408120771,
+     "old": 0.9056480999479437
+    }
+   }
+  },
+  "thyroid": {
+   "train": {
+    "val": 0.7640977443609023,
+    "T": 2.0766357993037894,
+    "qhat": 0.730459451675415,
+    "fusion_w": 0.0,
+    "log": [
+     {
+      "epoch": 0,
+      "loss": 0.6795122695493174,
+      "val": 0.7514411027568922,
+      "sec": 55.56242513656616
+     },
+     {
+      "epoch": 1,
+      "loss": 0.59239855998165,
+      "val": 0.750062656641604,
+      "sec": 39.68633770942688
+     },
+     {
+      "epoch": 2,
+      "loss": 0.49681850776567565,
+      "val": 0.7258145363408521,
+      "sec": 41.34342312812805
+     },
+     {
+      "epoch": 3,
+      "loss": 0.41892807333023996,
+      "val": 0.7640977443609023,
+      "sec": 40.43909192085266
+     },
+     {
+      "epoch": 4,
+      "loss": 0.34578723419498614,
+      "val": 0.743483709273183,
+      "sec": 40.75086283683777
+     },
+     {
+      "epoch": 5,
+      "loss": 0.27540682010598233,
+      "val": 0.7552631578947369,
+      "sec": 40.8688006401062
+     },
+     {
+      "epoch": 6,
+      "loss": 0.22187338638436663,
+      "val": 0.7518796992481203,
+      "sec": 40.60829401016235
+     },
+     {
+      "epoch": 7,
+      "loss": 0.20159386851630368,
+      "val": 0.7450501253132832,
+      "sec": 40.85805416107178
+     }
+    ]
+   },
+   "sets": {
+    "ddti": {
+     "new": {
+      "n": 81,
+      "bal_set_acc": 0.6040061633281972,
+      "macro_f1": 0.5042839657282742,
+      "auc": 0.6271186440677967,
+      "set_cov": 0.8641975308641975,
+      "set_size": 1.691358024691358
+     },
+     "old": {
+      "n": 81,
+      "bal_set_acc": 0.539291217257319,
+      "macro_f1": 0.360625290202755,
+      "auc": 0.5608628659476117
+     },
+     "old_contaminated": false
+    },
+    "internal": {
+     "new": {
+      "n": 166,
+      "bal_set_acc": 0.743452380952381,
+      "macro_f1": 0.7496229260935143,
+      "auc": 0.8341517857142857,
+      "set_cov": 0.9156626506024096,
+      "set_size": 1.3614457831325302
+     },
+     "old": {
+      "n": 166,
+      "bal_set_acc": 0.8946428571428571,
+      "macro_f1": 0.8899690676093681,
+      "auc": 0.9083333333333333
+     },
+     "old_contaminated": true
+    }
+   },
+   "robust": {
+    "clean": {
+     "new": 0.743452380952381,
+     "old": 0.8946428571428571
+    },
+    "jpeg30": {
+     "new": 0.7011904761904761,
+     "old": 0.8458333333333333
+    },
+    "blur": {
+     "new": 0.6933035714285714,
+     "old": 0.6034226190476191
+    },
+    "downscale0.5": {
+     "new": 0.6992559523809524,
+     "old": 0.8270833333333334
+    }
+   }
+  },
+  "esophageal": {
+   "train": {
+    "val": 1.0,
+    "T": 0.3000036107529056,
+    "qhat": 1.5497207641601562e-06,
+    "fusion_w": 0.0,
+    "log": [
+     {
+      "epoch": 0,
+      "loss": 0.2558827768248248,
+      "val": 1.0,
+      "sec": 189.00197291374207
+     },
+     {
+      "epoch": 1,
+      "loss": 0.13536774205515184,
+      "val": 1.0,
+      "sec": 131.9994342327118
+     },
+     {
+      "epoch": 2,
+      "loss": 0.12987322723829603,
+      "val": 0.9976525821596245,
+      "sec": 124.07623863220215
+     },
+     {
+      "epoch": 3,
+      "loss": 0.1276679848242237,
+      "val": 0.9980713596914175,
+      "sec": 121.84645509719849
+     },
+     {
+      "epoch": 4,
+      "loss": 0.12156284672309117,
+      "val": 0.9995178399228544,
+      "sec": 120.19868302345276
+     }
+    ]
+   },
+   "sets": {
+    "edd2020": {
+     "new": {
+      "n": 53,
+      "bal_set_acc": 0.5684210526315789,
+      "macro_f1": 0.5668817204301075,
+      "auc": 0.7403508771929824,
+      "set_cov": 0.6415094339622641,
+      "set_size": 1.0
+     },
+     "old": {
+      "n": 53,
+      "bal_set_acc": 0.6359649122807017,
+      "macro_f1": 0.5984848484848485,
+      "auc": 0.7
+     },
+     "old_contaminated": false
+    },
+    "internal": {
+     "new": {
+      "n": 1276,
+      "bal_set_acc": 0.9972438580802909,
+      "macro_f1": 0.9972438580802909,
+      "auc": 0.9998639208926791,
+      "set_cov": 0.9984326018808778,
+      "set_size": 1.0
+     },
+     "old": {
+      "n": 1276,
+      "bal_set_acc": 0.996770821183413,
+      "macro_f1": 0.995873252357949,
+      "auc": 0.999987040085017
+     },
+     "old_contaminated": true
+    }
+   },
+   "robust": {
+    "clean": {
+     "new": 1.0,
+     "old": 1.0
+    },
+    "jpeg30": {
+     "new": 1.0,
+     "old": 1.0
+    },
+    "blur": {
+     "new": 0.9980544747081712,
+     "old": 0.9883720930232558
+    },
+    "downscale0.5": {
+     "new": 1.0,
+     "old": 1.0
+    }
+   }
+  },
+  "gastric": {
+   "train": {
+    "val": 0.7263463105058281,
+    "T": 0.9914531830562023,
+    "qhat": 0.8758447170257568,
+    "fusion_w": 0.25,
+    "log": [
+     {
+      "epoch": 0,
+      "loss": 1.564514667872923,
+      "val": 0.6035589681339998,
+      "sec": 194.77104878425598
+     },
+     {
+      "epoch": 1,
+      "loss": 1.229092630636261,
+      "val": 0.6350967318977152,
+      "sec": 114.59501194953918
+     },
+     {
+      "epoch": 2,
+      "loss": 1.1332580436425037,
+      "val": 0.6689905547206505,
+      "sec": 105.20217680931091
+     },
+     {
+      "epoch": 3,
+      "loss": 1.1009373453008122,
+      "val": 0.681533308021973,
+      "sec": 94.80650568008423
+     },
+     {
+      "epoch": 4,
+      "loss": 1.0613438917929867,
+      "val": 0.6977883625459719,
+      "sec": 86.16298913955688
+     },
+     {
+      "epoch": 5,
+      "loss": 1.0179610604263214,
+      "val": 0.6851571996682126,
+      "sec": 86.015780210495
+     },
+     {
+      "epoch": 6,
+      "loss": 1.0186819663966995,
+      "val": 0.6859099179820459,
+      "sec": 85.9679594039917
+     },
+     {
+      "epoch": 7,
+      "loss": 0.9944682580878935,
+      "val": 0.7219980474135768,
+      "sec": 86.08151721954346
+     },
+     {
+      "epoch": 8,
+      "loss": 0.9523677448910403,
+      "val": 0.7231299303449714,
+      "sec": 86.21389031410217
+     },
+     {
+      "epoch": 9,
+      "loss": 0.9464020966047264,
+      "val": 0.7215012313662584,
+      "sec": 86.16902661323547
+     },
+     {
+      "epoch": 10,
+      "loss": 0.9499244438596519,
+      "val": 0.7263463105058281,
+      "sec": 85.96579337120056
+     },
+     {
+      "epoch": 11,
+      "loss": 0.9373720148241663,
+      "val": 0.7261906664049309,
+      "sec": 85.94980692863464
+     }
+    ]
+   },
+   "sets": {
+    "internal": {
+     "new": {
+      "n": 1500,
+      "bal_set_acc": 0.7216771542299703,
+      "macro_f1": 0.7225521593693807,
+      "set_cov": 0.9066666666666666,
+      "set_size": 1.7786666666666666
+     },
+     "old": {
+      "n": 1500,
+      "bal_set_acc": 0.8418419070957979,
+      "macro_f1": 0.841298424538093
+     },
+     "old_contaminated": true
+    }
+   },
+   "robust": {
+    "clean": {
+     "new": 0.777704805167029,
+     "old": 0.8744086400194335
+    },
+    "stain\u2192colon-ext": {
+     "new": 0.7131026729456253,
+     "old": 0.7273886959009661
+    },
+    "stain\u2192lung-ext": {
+     "new": 0.5445484431590272,
+     "old": 0.6168158693517842
+    },
+    "jpeg30": {
+     "new": 0.7563295672050803,
+     "old": 0.830149123569482
+    },
+    "blur": {
+     "new": 0.7136064245145992,
+     "old": 0.7055300500774355
+    },
+    "downscale0.5": {
+     "new": 0.7581768192892802,
+     "old": 0.8443795290189513
+    }
+   }
+  },
+  "oral": {
+   "train": {
+    "val": 0.9898639330697803,
+    "T": 0.6653469755347171,
+    "qhat": 0.007704257965087891,
+    "fusion_w": 0.5,
+    "log": [
+     {
+      "epoch": 0,
+      "loss": 0.5241588223949972,
+      "val": 0.8630458766203917,
+      "sec": 123.32079267501831
+     },
+     {
+      "epoch": 1,
+      "loss": 0.3454725057425269,
+      "val": 0.923255493242622,
+      "sec": 78.791339635849
+     },
+     {
+      "epoch": 2,
+      "loss": 0.26411680500191376,
+      "val": 0.9639744414820264,
+      "sec": 76.94797444343567
+     },
+     {
+      "epoch": 3,
+      "loss": 0.2380181773599372,
+      "val": 0.97220741013147,
+      "sec": 76.6406717300415
+     },
+     {
+      "epoch": 4,
+      "loss": 0.20170219924794622,
+      "val": 0.9798106095430725,
+      "sec": 76.3457384109497
+     },
+     {
+      "epoch": 5,
+      "loss": 0.18000189515661044,
+      "val": 0.9824813827342098,
+      "sec": 77.10458016395569
+     },
+     {
+      "epoch": 6,
+      "loss": 0.17128624722182031,
+      "val": 0.9898639330697803,
+      "sec": 76.5580427646637
+     },
+     {
+      "epoch": 7,
+      "loss": 0.15605745051639625,
+      "val": 0.9878643008182404,
+      "sec": 76.76995420455933
+     },
+     {
+      "epoch": 8,
+      "loss": 0.15202715566538902,
+      "val": 0.9878505102509882,
+      "sec": 76.50798058509827
+     },
+     {
+      "epoch": 9,
+      "loss": 0.14897585090204893,
+      "val": 0.9892203732646869,
+      "sec": 76.22761368751526
+     },
+     {
+      "epoch": 10,
+      "loss": 0.14585162106766758,
+      "val": 0.9885354417578376,
+      "sec": 75.84100484848022
+     }
+    ]
+   },
+   "sets": {
+    "internal": {
+     "new": {
+      "n": 1475,
+      "bal_set_acc": 0.9884503020803438,
+      "macro_f1": 0.9884669215672476,
+      "auc": 0.9981860461693562,
+      "set_cov": 0.9884745762711864,
+      "set_size": 1.0
+     },
+     "old": {
+      "n": 1475,
+      "bal_set_acc": 0.9830912275279452,
+      "macro_f1": 0.9830418368806362,
+      "auc": 0.9985227130567882
+     },
+     "old_contaminated": true
+    },
+    "HOLDOUT oral": {
+     "new": {
+      "n": 1500,
+      "bal_set_acc": 0.979096095560706,
+      "macro_f1": 0.9792667565850341,
+      "auc": 0.9976715992155464,
+      "set_cov": 0.9793333333333333,
+      "set_size": 1.0
+     },
+     "old": {
+      "n": 1500,
+      "bal_set_acc": 0.96658049563202,
+      "macro_f1": 0.9659436784121651,
+      "auc": 0.9941852380103404
+     },
+     "old_contaminated": false
+    }
+   },
+   "robust": {
+    "clean": {
+     "new": 0.9896672034353193,
+     "old": 0.9871175523349436
+    },
+    "stain\u2192colon-ext": {
+     "new": 0.8960010735373054,
+     "old": 0.9394793344068706
+    },
+    "stain\u2192lung-ext": {
+     "new": 0.892914653784219,
+     "old": 0.9550456253354804
+    },
+    "jpeg30": {
+     "new": 0.9865807836822329,
+     "old": 0.9778582930756843
+    },
+    "blur": {
+     "new": 0.9488727858293076,
+     "old": 0.8749329039184112
+    },
+    "downscale0.5": {
+     "new": 0.9896672034353193,
+     "old": 0.9814814814814814
+    }
+   }
+  },
+  "brain_2d": {
+   "train": {
+    "val": 0.9993333333333334,
+    "T": 0.5804425307622897,
+    "qhat": 0.0008488893508911133,
+    "fusion_w": 0.0,
+    "log": [
+     {
+      "epoch": 0,
+      "loss": 0.5343912929655558,
+      "val": 0.9618782002134729,
+      "sec": 119.21669101715088
+     },
+     {
+      "epoch": 1,
+      "loss": 0.26412889720445654,
+      "val": 0.9734361610968295,
+      "sec": 76.69034099578857
+     },
+     {
+      "epoch": 2,
+      "loss": 0.21838533160198165,
+      "val": 0.9938713450292397,
+      "sec": 74.92335224151611
+     },
+     {
+      "epoch": 3,
+      "loss": 0.19485659071479935,
+      "val": 0.9965724078834618,
+      "sec": 74.36994409561157
+     },
+     {
+      "epoch": 4,
+      "loss": 0.1865094720599163,
+      "val": 0.9976811136667719,
+      "sec": 74.0406231880188
+     },
+     {
+      "epoch": 5,
+      "loss": 0.17981373446892543,
+      "val": 0.9993333333333334,
+      "sec": 73.71807336807251
+     },
+     {
+      "epoch": 6,
+      "loss": 0.17546126542680235,
+      "val": 0.9978713450292398,
+      "sec": 73.47378015518188
+     },
+     {
+      "epoch": 7,
+      "loss": 0.17652319156261811,
+      "val": 0.9978713450292398,
+      "sec": 73.68637824058533
+     },
+     {
+      "epoch": 8,
+      "loss": 0.1728653314422412,
+      "val": 0.9993333333333334,
+      "sec": 73.76619291305542
+     },
+     {
+      "epoch": 9,
+      "loss": 0.17165020557053118,
+      "val": 0.9978713450292398,
+      "sec": 73.49735379219055
+     }
+    ]
+   },
+   "sets": {
+    "internal": {
+     "new": {
+      "n": 1073,
+      "bal_set_acc": 1.0,
+      "macro_f1": 1.0,
+      "set_cov": 1.0,
+      "set_size": 1.0
+     },
+     "old": {
+      "n": 1073,
+      "bal_set_acc": 0.9985875706214689,
+      "macro_f1": 0.9984219638973425
+     },
+     "old_contaminated": true
+    },
+    "HOLDOUT pmram": {
+     "new": {
+      "n": 998,
+      "bal_set_acc": 0.8607623176935474,
+      "macro_f1": 0.8653775188096783,
+      "set_cov": 0.8657314629258517,
+      "set_size": 1.0
+     },
+     "old": {
+      "n": 998,
+      "bal_set_acc": 0.919735965900003,
+      "macro_f1": 0.9214768261406752
+     },
+     "old_contaminated": false
+    }
+   },
+   "robust": {
+    "clean": {
+     "new": 1.0,
+     "old": 0.9950248756218905
+    },
+    "jpeg30": {
+     "new": 0.9975124378109452,
+     "old": 0.9891769224055164
+    },
+    "blur": {
+     "new": 0.9701492537313433,
+     "old": 0.9071947952544969
+    },
+    "downscale0.5": {
+     "new": 0.9950248756218905,
+     "old": 0.9950248756218905
+    }
+   }
+  }
+ }
+}

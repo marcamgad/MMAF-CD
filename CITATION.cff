@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "MMAF-CD: Multi-Modal AI Framework for Enhanced Cancer Detection"
+authors:
+  - family-names: Amgad
+    given-names: Marc
+    affiliation: German University in Cairo
+type: software
+date-released: 2026-10-22
+license: MIT

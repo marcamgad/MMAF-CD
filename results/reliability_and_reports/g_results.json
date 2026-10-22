@@ -1,0 +1,1194 @@
+{
+ "meta": {
+  "table": "/kaggle/input/datasets/marcyoussef22/mmaf-v25-e2/e_out/e_table.csv",
+  "specialists": {
+   "bladder": {
+    "T": 1.786492513948441,
+    "stage": "E2",
+    "path": "/kaggle/input/datasets/marcyoussef22/mmaf-v25-e2/mmaf_v25_E2/spec_v25/bladder.pth"
+   },
+   "blood": {
+    "T": 0.5348853908693592,
+    "stage": "E2",
+    "path": "/kaggle/input/datasets/marcyoussef22/mmaf-v25-e2/mmaf_v25_E2/spec_v25/blood.pth"
+   },
+   "brain_2d": {
+    "T": 0.5804425307622897,
+    "stage": "E2",
+    "path": "/kaggle/input/datasets/marcyoussef22/mmaf-v25-e2/mmaf_v25_E2/spec_v25/brain_2d.pth"
+   },
+   "breast": {
+    "T": 0.9975357640224023,
+    "stage": "E2",
+    "path": "/kaggle/input/datasets/marcyoussef22/mmaf-v25-e2/e_out/spec_v25/breast.pth"
+   },
+   "cervical": {
+    "T": 0.31470751256549057,
+    "stage": "E2",
+    "path": "/kaggle/input/datasets/marcyoussef22/mmaf-v25-e2/e_out/spec_v25/cervical.pth"
+   },
+   "colon": {
+    "T": 0.3000724591860435,
+    "stage": "E2",
+    "path": "/kaggle/input/datasets/marcyoussef22/mmaf-v25-e2/e_out/spec_v25/colon.pth"
+   },
+   "esophageal": {
+    "T": 0.3000036107529056,
+    "stage": "E2",
+    "path": "/kaggle/input/datasets/marcyoussef22/mmaf-v25-e2/e_out/spec_v25/esophageal.pth"
+   },
+   "gastric": {
+    "T": 0.9914531830562023,
+    "stage": "E2",
+    "path": "/kaggle/input/datasets/marcyoussef22/mmaf-v25-e2/e_out/spec_v25/gastric.pth"
+   },
+   "kidney": {
+    "T": 1.669863389926575,
+    "stage": "E2",
+    "path": "/kaggle/input/datasets/marcyoussef22/mmaf-v25-e2/e_out/spec_v25/kidney.pth"
+   },
+   "lung": {
+    "T": 0.5246933470093819,
+    "stage": "E2",
+    "path": "/kaggle/input/datasets/marcyoussef22/mmaf-v25-e2/mmaf_v25_E2/spec_v25/lung.pth"
+   },
+   "lymphoma": {
+    "T": 0.30000392207706084,
+    "stage": "E2",
+    "path": "/kaggle/input/datasets/marcyoussef22/mmaf-v25-e2/mmaf_v25_E2/spec_v25/lymphoma.pth"
+   },
+   "oral": {
+    "T": 0.6653469755347171,
+    "stage": "E2",
+    "path": "/kaggle/input/datasets/marcyoussef22/mmaf-v25-e2/e_out/spec_v25/oral.pth"
+   },
+   "ovarian": {
+    "T": 0.9564377858715095,
+    "stage": "E2",
+    "path": "/kaggle/input/datasets/marcyoussef22/mmaf-v25-e2/mmaf_v25_E2/spec_v25/ovarian.pth"
+   },
+   "pancreatic": {
+    "T": 2.525900029828266,
+    "stage": "E2P",
+    "path": "/kaggle/input/datasets/marcyoussef22/mmaf-v25-e2p/e_out/spec_v25/pancreatic.pth"
+   },
+   "skin": {
+    "T": 1.0178471554039803,
+    "stage": "E2",
+    "path": "/kaggle/input/datasets/marcyoussef22/mmaf-v25-e2/e_out/spec_v25/skin.pth"
+   },
+   "thyroid": {
+    "T": 2.0766357993037894,
+    "stage": "E2",
+    "path": "/kaggle/input/datasets/marcyoussef22/mmaf-v25-e2/e_out/spec_v25/thyroid.pth"
+   }
+  },
+  "coverage": {
+   "bladder|internal": {
+    "test_rows": 249,
+    "readable_frac": 1.0
+   },
+   "blood|c-nmc": {
+    "test_rows": 195,
+    "readable_frac": 1.0
+   },
+   "blood|internal": {
+    "test_rows": 2947,
+    "readable_frac": 1.0
+   },
+   "brain_2d|internal": {
+    "test_rows": 1073,
+    "readable_frac": 1.0
+   },
+   "brain_2d|pmram": {
+    "test_rows": 998,
+    "readable_frac": 0.0
+   },
+   "breast|cbis_roi": {
+    "test_rows": 1017,
+    "readable_frac": 1.0
+   },
+   "breast|internal": {
+    "test_rows": 2825,
+    "readable_frac": 1.0
+   },
+   "cervical|internal": {
+    "test_rows": 3671,
+    "readable_frac": 1.0
+   },
+   "cervical|lbc": {
+    "test_rows": 299,
+    "readable_frac": 1.0
+   },
+   "colon|crc-val-he-7k": {
+    "test_rows": 563,
+    "readable_frac": 1.0
+   },
+   "colon|internal": {
+    "test_rows": 1444,
+    "readable_frac": 1.0
+   },
+   "esophageal|edd2020": {
+    "test_rows": 53,
+    "readable_frac": 1.0
+   },
+   "esophageal|internal": {
+    "test_rows": 1276,
+    "readable_frac": 1.0
+   },
+   "gastric|internal": {
+    "test_rows": 4697,
+    "readable_frac": 1.0
+   },
+   "kidney|internal": {
+    "test_rows": 1624,
+    "readable_frac": 1.0
+   },
+   "kidney|kits23": {
+    "test_rows": 384,
+    "readable_frac": 1.0
+   },
+   "lung|internal": {
+    "test_rows": 1902,
+    "readable_frac": 1.0
+   },
+   "lung|lunghist700": {
+    "test_rows": 431,
+    "readable_frac": 1.0
+   },
+   "lymphoma|internal": {
+    "test_rows": 2227,
+    "readable_frac": 1.0
+   },
+   "oral|internal": {
+    "test_rows": 1475,
+    "readable_frac": 1.0
+   },
+   "oral|oral": {
+    "test_rows": 4902,
+    "readable_frac": 0.0
+   },
+   "ovarian|internal": {
+    "test_rows": 3517,
+    "readable_frac": 1.0
+   },
+   "ovarian|ovarian": {
+    "test_rows": 126,
+    "readable_frac": 0.0
+   },
+   "pancreatic|internal": {
+    "test_rows": 5,
+    "readable_frac": 1.0
+   },
+   "pancreatic|msd_task07": {
+    "test_rows": 626,
+    "readable_frac": 1.0
+   },
+   "pancreatic|nih": {
+    "test_rows": 246,
+    "readable_frac": 1.0
+   },
+   "skin|internal": {
+    "test_rows": 2712,
+    "readable_frac": 1.0
+   },
+   "skin|isic2018": {
+    "test_rows": 922,
+    "readable_frac": 1.0
+   },
+   "skin|pad-ufes-20": {
+    "test_rows": 661,
+    "readable_frac": 0.0
+   },
+   "thyroid|ddti": {
+    "test_rows": 81,
+    "readable_frac": 1.0
+   },
+   "thyroid|internal": {
+    "test_rows": 166,
+    "readable_frac": 1.0
+   },
+   "thyroid|tn3k": {
+    "test_rows": 353,
+    "readable_frac": 1.0
+   }
+  },
+  "moved_roots": {},
+  "elapsed_h": 0.2578155415587955
+ },
+ "config": {
+  "evidence_method": {
+   "bladder": "Score-CAM",
+   "blood": "Score-CAM",
+   "brain_2d": "Grad-CAM",
+   "breast": "Score-CAM",
+   "cervical": "Score-CAM",
+   "colon": "Score-CAM",
+   "esophageal": "Grad-CAM",
+   "gastric": "Grad-CAM",
+   "kidney": "Score-CAM",
+   "lung": "Score-CAM",
+   "lymphoma": "Score-CAM",
+   "oral": "Score-CAM",
+   "ovarian": "Grad-CAM",
+   "pancreatic": "Grad-CAM",
+   "skin": "Grad-CAM",
+   "thyroid": "Grad-CAM"
+  },
+  "localiser": {
+   "skin": [
+    "EigenCAM",
+    0.6702210854597003,
+    0.497418796178744
+   ],
+   "thyroid": [
+    "Score-CAM",
+    0.5377081692000226,
+    0.2638394143697005
+   ],
+   "kidney": [
+    "EigenCAM",
+    0.24129804591658272,
+    0.05178578534534664
+   ],
+   "esophageal": [
+    "Score-CAM",
+    0.3110950959687334,
+    0.30703453864528546
+   ]
+  },
+  "outline_validated": {
+   "skin": true,
+   "thyroid": true,
+   "kidney": false,
+   "esophageal": false
+  }
+ },
+ "thresholds": {
+  "bladder": {
+   "n_val": 147,
+   "tau_tta": 0.5484497547149658,
+   "tau_prob": 0.6190054416656494,
+   "qhat": 0.8081759214401245,
+   "val_review_rate": 0.23129251700680273
+  },
+  "blood": {
+   "n_val": 260,
+   "tau_tta": 0.13306638598442078,
+   "tau_prob": 0.38169875741004944,
+   "qhat": 0.577182948589325,
+   "val_review_rate": 0.1076923076923077
+  },
+  "brain_2d": {
+   "n_val": 400,
+   "tau_tta": 0.33291399478912354,
+   "tau_prob": 0.9990549683570862,
+   "qhat": 0.0008573532104492188,
+   "val_review_rate": 0.13
+  },
+  "breast": {
+   "n_val": 400,
+   "tau_tta": 0.3912254273891449,
+   "tau_prob": 0.6339061260223389,
+   "qhat": 0.8247314691543579,
+   "val_review_rate": 0.2
+  },
+  "cervical": {
+   "n_val": 302,
+   "tau_tta": 0.03905525431036949,
+   "tau_prob": 0.36204299330711365,
+   "qhat": 0.6244605779647827,
+   "val_review_rate": 0.2152317880794702
+  },
+  "colon": {
+   "n_val": 400,
+   "tau_tta": 2.3297843654290773e-07,
+   "tau_prob": 0.9999991655349731,
+   "qhat": 7.152557373046875e-07,
+   "val_review_rate": 0.085
+  },
+  "esophageal": {
+   "n_val": 400,
+   "tau_tta": 1.5564507975796005e-06,
+   "tau_prob": 0.9999979734420776,
+   "qhat": 1.430511474609375e-06,
+   "val_review_rate": 0.11
+  },
+  "gastric": {
+   "n_val": 400,
+   "tau_tta": 0.13346800208091736,
+   "tau_prob": 0.37015092372894287,
+   "qhat": 0.8927462697029114,
+   "val_review_rate": 0.465
+  },
+  "kidney": {
+   "n_val": 354,
+   "tau_tta": 0.36850854754447937,
+   "tau_prob": 0.7263320684432983,
+   "qhat": 0.8887894749641418,
+   "val_review_rate": 0.1977401129943503
+  },
+  "lung": {
+   "n_val": 400,
+   "tau_tta": 6.999280594754964e-05,
+   "tau_prob": 0.9996651411056519,
+   "qhat": 0.00031375885009765625,
+   "val_review_rate": 0.105
+  },
+  "lymphoma": {
+   "n_val": 400,
+   "tau_tta": 2.1158017204925272e-07,
+   "tau_prob": 0.9999994039535522,
+   "qhat": 5.960464477539062e-07,
+   "val_review_rate": 0.07
+  },
+  "oral": {
+   "n_val": 400,
+   "tau_tta": 0.016288962215185165,
+   "tau_prob": 0.9837045073509216,
+   "qhat": 0.00869375467300415,
+   "val_review_rate": 0.1
+  },
+  "ovarian": {
+   "n_val": 200,
+   "tau_tta": 0.1902354508638382,
+   "tau_prob": 0.4026039242744446,
+   "qhat": 0.8419543504714966,
+   "val_review_rate": 0.285
+  },
+  "pancreatic": {
+   "n_val": 254,
+   "tau_tta": 0.19011642038822174,
+   "tau_prob": 0.5271299481391907,
+   "qhat": 0.7273542881011963,
+   "val_review_rate": 0.5078740157480315
+  },
+  "skin": {
+   "n_val": 200,
+   "tau_tta": 0.1458675116300583,
+   "tau_prob": 0.6588524580001831,
+   "qhat": 0.30509036779403687,
+   "val_review_rate": 0.075
+  },
+  "thyroid": {
+   "n_val": 181,
+   "tau_tta": 0.3143830895423889,
+   "tau_prob": 0.5361177325248718,
+   "qhat": 0.7302279472351074,
+   "val_review_rate": 0.44751381215469616
+  }
+ },
+ "eval": {
+  "bladder": {
+   "n": 200,
+   "sources": [
+    "internal"
+   ],
+   "review_rate": 0.16500000000000004,
+   "acc_all": 0.77,
+   "acc_accepted": 0.8263473053892215,
+   "silent_error": 0.145,
+   "errors_caught": 0.3695652173913043,
+   "set_coverage": 0.85,
+   "set_size": 1.135,
+   "heatmap_check": {
+    "consistent": 0.35,
+    "weak": 0.0,
+    "not supported": 0.3,
+    "inconclusive": 0.35
+   }
+  },
+  "blood": {
+   "n": 200,
+   "sources": [
+    "c-nmc",
+    "internal"
+   ],
+   "review_rate": 0.235,
+   "acc_all": 0.915,
+   "acc_accepted": 0.9607843137254902,
+   "silent_error": 0.03,
+   "errors_caught": 0.6470588235294118,
+   "set_coverage": 0.775,
+   "set_size": 0.855,
+   "heatmap_check": {
+    "consistent": 0.675,
+    "weak": 0.0,
+    "not supported": 0.25,
+    "inconclusive": 0.075
+   }
+  },
+  "brain_2d": {
+   "n": 100,
+   "sources": [
+    "internal"
+   ],
+   "review_rate": 0.08999999999999997,
+   "acc_all": 1.0,
+   "acc_accepted": 1.0,
+   "silent_error": 0.0,
+   "errors_caught": 0.0,
+   "set_coverage": 0.93,
+   "set_size": 0.93,
+   "heatmap_check": {
+    "consistent": 0.325,
+    "weak": 0.075,
+    "not supported": 0.025,
+    "inconclusive": 0.575
+   }
+  },
+  "breast": {
+   "n": 200,
+   "sources": [
+    "cbis_roi",
+    "internal"
+   ],
+   "review_rate": 0.21499999999999997,
+   "acc_all": 0.84,
+   "acc_accepted": 0.910828025477707,
+   "silent_error": 0.07,
+   "errors_caught": 0.5625,
+   "set_coverage": 0.92,
+   "set_size": 1.18,
+   "heatmap_check": {
+    "consistent": 0.425,
+    "weak": 0.125,
+    "not supported": 0.225,
+    "inconclusive": 0.225
+   }
+  },
+  "cervical": {
+   "n": 200,
+   "sources": [
+    "internal",
+    "lbc"
+   ],
+   "review_rate": 0.265,
+   "acc_all": 1.0,
+   "acc_accepted": 1.0,
+   "silent_error": 0.0,
+   "errors_caught": 0.0,
+   "set_coverage": 0.915,
+   "set_size": 1.065,
+   "heatmap_check": {
+    "consistent": 0.025,
+    "weak": 0.025,
+    "not supported": 0.0,
+    "inconclusive": 0.95
+   }
+  },
+  "colon": {
+   "n": 200,
+   "sources": [
+    "crc-val-he-7k",
+    "internal"
+   ],
+   "review_rate": 0.08999999999999997,
+   "acc_all": 1.0,
+   "acc_accepted": 1.0,
+   "silent_error": 0.0,
+   "errors_caught": 0.0,
+   "set_coverage": 0.92,
+   "set_size": 0.92,
+   "heatmap_check": {
+    "consistent": 0.025,
+    "weak": 0.0,
+    "not supported": 0.0,
+    "inconclusive": 0.975
+   }
+  },
+  "esophageal": {
+   "n": 200,
+   "sources": [
+    "internal"
+   ],
+   "review_rate": 0.07499999999999996,
+   "acc_all": 1.0,
+   "acc_accepted": 1.0,
+   "silent_error": 0.0,
+   "errors_caught": 0.0,
+   "set_coverage": 0.93,
+   "set_size": 0.93,
+   "heatmap_check": {
+    "consistent": 0.0,
+    "weak": 0.0,
+    "not supported": 0.0,
+    "inconclusive": 1.0
+   }
+  },
+  "gastric": {
+   "n": 200,
+   "sources": [
+    "internal"
+   ],
+   "review_rate": 0.565,
+   "acc_all": 0.725,
+   "acc_accepted": 0.9425287356321839,
+   "silent_error": 0.025,
+   "errors_caught": 0.9090909090909091,
+   "set_coverage": 0.935,
+   "set_size": 1.795,
+   "heatmap_check": {
+    "consistent": 0.65,
+    "weak": 0.1,
+    "not supported": 0.2,
+    "inconclusive": 0.05
+   }
+  },
+  "kidney": {
+   "n": 200,
+   "sources": [
+    "internal",
+    "kits23"
+   ],
+   "review_rate": 0.22499999999999998,
+   "acc_all": 0.845,
+   "acc_accepted": 0.8838709677419355,
+   "silent_error": 0.09,
+   "errors_caught": 0.41935483870967744,
+   "set_coverage": 0.905,
+   "set_size": 1.22,
+   "heatmap_check": {
+    "consistent": 0.5,
+    "weak": 0.175,
+    "not supported": 0.1,
+    "inconclusive": 0.225
+   }
+  },
+  "lung": {
+   "n": 200,
+   "sources": [
+    "internal",
+    "lunghist700"
+   ],
+   "review_rate": 0.395,
+   "acc_all": 0.84,
+   "acc_accepted": 0.9338842975206612,
+   "silent_error": 0.04,
+   "errors_caught": 0.75,
+   "set_coverage": 0.565,
+   "set_size": 0.605,
+   "heatmap_check": {
+    "consistent": 0.075,
+    "weak": 0.0,
+    "not supported": 0.1,
+    "inconclusive": 0.825
+   }
+  },
+  "lymphoma": {
+   "n": 200,
+   "sources": [
+    "internal"
+   ],
+   "review_rate": 0.07999999999999996,
+   "acc_all": 1.0,
+   "acc_accepted": 1.0,
+   "silent_error": 0.0,
+   "errors_caught": 0.0,
+   "set_coverage": 0.935,
+   "set_size": 0.935,
+   "heatmap_check": {
+    "consistent": 0.05,
+    "weak": 0.0,
+    "not supported": 0.0,
+    "inconclusive": 0.95
+   }
+  },
+  "oral": {
+   "n": 100,
+   "sources": [
+    "internal"
+   ],
+   "review_rate": 0.07999999999999996,
+   "acc_all": 0.98,
+   "acc_accepted": 1.0,
+   "silent_error": 0.0,
+   "errors_caught": 1.0,
+   "set_coverage": 0.93,
+   "set_size": 0.93,
+   "heatmap_check": {
+    "consistent": 0.25,
+    "weak": 0.0,
+    "not supported": 0.025,
+    "inconclusive": 0.725
+   }
+  },
+  "ovarian": {
+   "n": 100,
+   "sources": [
+    "internal"
+   ],
+   "review_rate": 0.31999999999999995,
+   "acc_all": 0.75,
+   "acc_accepted": 0.9264705882352942,
+   "silent_error": 0.05,
+   "errors_caught": 0.8,
+   "set_coverage": 0.92,
+   "set_size": 1.33,
+   "heatmap_check": {
+    "consistent": 0.575,
+    "weak": 0.075,
+    "not supported": 0.125,
+    "inconclusive": 0.225
+   }
+  },
+  "pancreatic": {
+   "n": 200,
+   "sources": [
+    "msd_task07",
+    "nih"
+   ],
+   "review_rate": 0.5900000000000001,
+   "acc_all": 0.645,
+   "acc_accepted": 0.8048780487804879,
+   "silent_error": 0.08,
+   "errors_caught": 0.7746478873239436,
+   "set_coverage": 0.91,
+   "set_size": 1.58,
+   "heatmap_check": {
+    "consistent": 0.825,
+    "weak": 0.15,
+    "not supported": 0.025,
+    "inconclusive": 0.0
+   }
+  },
+  "skin": {
+   "n": 100,
+   "sources": [
+    "internal"
+   ],
+   "review_rate": 0.09999999999999998,
+   "acc_all": 0.97,
+   "acc_accepted": 1.0,
+   "silent_error": 0.0,
+   "errors_caught": 1.0,
+   "set_coverage": 0.91,
+   "set_size": 0.93,
+   "heatmap_check": {
+    "consistent": 0.2,
+    "weak": 0.15,
+    "not supported": 0.15,
+    "inconclusive": 0.5
+   }
+  },
+  "thyroid": {
+   "n": 166,
+   "sources": [
+    "internal"
+   ],
+   "review_rate": 0.4156626506024096,
+   "acc_all": 0.7771084337349398,
+   "acc_accepted": 0.865979381443299,
+   "silent_error": 0.0783132530120482,
+   "errors_caught": 0.6486486486486487,
+   "set_coverage": 0.9156626506024096,
+   "set_size": 1.3614457831325302,
+   "heatmap_check": {
+    "consistent": 0.475,
+    "weak": 0.175,
+    "not supported": 0.3,
+    "inconclusive": 0.05
+   }
+  }
+ },
+ "nuclei_pq": {
+  "pannuke": {
+   "official": {
+    "PQ": 0.6292679999999999,
+    "PQ_std": 0.18854691841201404,
+    "DQ": 0.7470453333333333,
+    "SQ": 0.7944466666666666,
+    "n": 150,
+    "pred_per_tile": 29.746666666666666,
+    "gt_per_tile": 29.073333333333334,
+    "seconds": 69.48148965835571
+   },
+   "mmaf": {
+    "PQ": 0.3259,
+    "PQ_std": 0.176,
+    "DQ": 0.4363,
+    "SQ": 0.6798,
+    "n": 150,
+    "pred_per_tile": 19.1,
+    "gt_per_tile": 29.1
+   }
+  },
+  "monuseg": {
+   "official": {
+    "PQ": 0.3724485207100592,
+    "PQ_std": 0.17668432924839064,
+    "DQ": 0.5082908284023668,
+    "SQ": 0.6706579881656805,
+    "n": 338,
+    "pred_per_tile": 41.63609467455621,
+    "gt_per_tile": 42.19822485207101,
+    "seconds": 222.5477135181427
+   },
+   "mmaf": {
+    "PQ": 0.2805,
+    "PQ_std": 0.17,
+    "DQ": 0.4097,
+    "SQ": 0.6115,
+    "n": 338,
+    "pred_per_tile": 22.1,
+    "gt_per_tile": 42.2
+   }
+  }
+ },
+ "reports": [
+  {
+   "case": "bladder-01",
+   "organ": "bladder",
+   "finding": "Non-muscle-invasive pattern",
+   "category": "malignant",
+   "p": 0.8733896613121033,
+   "accepted": true,
+   "tier": "Priority specialist review",
+   "heatmap_check": "consistent",
+   "outline": false,
+   "nuclei": null,
+   "fhir_valid": true,
+   "source": "internal"
+  },
+  {
+   "case": "bladder-02",
+   "organ": "bladder",
+   "finding": "Muscle-invasive pattern",
+   "category": "malignant",
+   "p": 0.7922783493995667,
+   "accepted": false,
+   "tier": "Human review required \u2014 AI result not accepted",
+   "heatmap_check": "not supported",
+   "outline": false,
+   "nuclei": null,
+   "fhir_valid": true,
+   "source": "internal"
+  },
+  {
+   "case": "blood-01",
+   "organ": "blood",
+   "finding": "Early pre-B ALL morphology pattern",
+   "category": "malignant",
+   "p": 0.9998169541358948,
+   "accepted": true,
+   "tier": "Priority specialist review",
+   "heatmap_check": "inconclusive",
+   "outline": false,
+   "nuclei": null,
+   "fhir_valid": true,
+   "source": "internal"
+  },
+  {
+   "case": "blood-02",
+   "organ": "blood",
+   "finding": "Pre-B ALL morphology pattern",
+   "category": "malignant",
+   "p": 0.9996699094772339,
+   "accepted": true,
+   "tier": "Priority specialist review",
+   "heatmap_check": "inconclusive",
+   "outline": false,
+   "nuclei": null,
+   "fhir_valid": true,
+   "source": "internal"
+  },
+  {
+   "case": "brain_2d-01",
+   "organ": "brain_2d",
+   "finding": "Glioma pattern",
+   "category": "malignant",
+   "p": 0.9994673132896423,
+   "accepted": true,
+   "tier": "Priority specialist review",
+   "heatmap_check": "inconclusive",
+   "outline": false,
+   "nuclei": null,
+   "fhir_valid": true,
+   "source": "internal"
+  },
+  {
+   "case": "brain_2d-02",
+   "organ": "brain_2d",
+   "finding": "Meningioma pattern",
+   "category": "abnormal",
+   "p": 0.9989989399909973,
+   "accepted": false,
+   "tier": "Human review required \u2014 AI result not accepted",
+   "heatmap_check": "inconclusive",
+   "outline": false,
+   "nuclei": null,
+   "fhir_valid": true,
+   "source": "internal"
+  },
+  {
+   "case": "breast-01",
+   "organ": "breast",
+   "finding": "Suspicious for malignancy",
+   "category": "malignant",
+   "p": 0.9844183921813965,
+   "accepted": true,
+   "tier": "Priority specialist review",
+   "heatmap_check": "inconclusive",
+   "outline": false,
+   "nuclei": null,
+   "fhir_valid": true,
+   "source": "internal"
+  },
+  {
+   "case": "breast-02",
+   "organ": "breast",
+   "finding": "Benign-appearing finding",
+   "category": "benign",
+   "p": 0.541860044002533,
+   "accepted": false,
+   "tier": "Human review required \u2014 AI result not accepted",
+   "heatmap_check": "not supported",
+   "outline": false,
+   "nuclei": null,
+   "fhir_valid": true,
+   "source": "cbis_roi"
+  },
+  {
+   "case": "cervical-01",
+   "organ": "cervical",
+   "finding": "Metaplastic squamous cells",
+   "category": "normal",
+   "p": 0.9999997615814209,
+   "accepted": true,
+   "tier": "Routine",
+   "heatmap_check": "inconclusive",
+   "outline": false,
+   "nuclei": null,
+   "fhir_valid": true,
+   "source": "internal"
+  },
+  {
+   "case": "cervical-02",
+   "organ": "cervical",
+   "finding": "Metaplastic squamous cells",
+   "category": "normal",
+   "p": 0.9999997615814209,
+   "accepted": true,
+   "tier": "Routine",
+   "heatmap_check": "inconclusive",
+   "outline": false,
+   "nuclei": null,
+   "fhir_valid": true,
+   "source": "internal"
+  },
+  {
+   "case": "colon-01",
+   "organ": "colon",
+   "finding": "Adenocarcinoma pattern",
+   "category": "malignant",
+   "p": 0.9999994039535522,
+   "accepted": true,
+   "tier": "Priority specialist review",
+   "heatmap_check": "inconclusive",
+   "outline": false,
+   "nuclei": 511,
+   "fhir_valid": true,
+   "source": "internal"
+  },
+  {
+   "case": "colon-02",
+   "organ": "colon",
+   "finding": "Benign colonic tissue pattern",
+   "category": "benign",
+   "p": 0.9999995231628418,
+   "accepted": true,
+   "tier": "Routine",
+   "heatmap_check": "inconclusive",
+   "outline": false,
+   "nuclei": 53,
+   "fhir_valid": true,
+   "source": "crc-val-he-7k"
+  },
+  {
+   "case": "esophageal-01",
+   "organ": "esophageal",
+   "finding": "High-grade dysplasia / cancer pattern",
+   "category": "malignant",
+   "p": 0.9999994039535522,
+   "accepted": true,
+   "tier": "Priority specialist review",
+   "heatmap_check": "inconclusive",
+   "outline": false,
+   "nuclei": null,
+   "fhir_valid": true,
+   "source": "internal"
+  },
+  {
+   "case": "esophageal-02",
+   "organ": "esophageal",
+   "finding": "High-grade dysplasia / cancer pattern",
+   "category": "malignant",
+   "p": 0.9999998807907104,
+   "accepted": false,
+   "tier": "Human review required \u2014 AI result not accepted",
+   "heatmap_check": "inconclusive",
+   "outline": false,
+   "nuclei": null,
+   "fhir_valid": true,
+   "source": "internal"
+  },
+  {
+   "case": "gastric-01",
+   "organ": "gastric",
+   "finding": "Smooth muscle",
+   "category": "tissue",
+   "p": 0.9583777785301208,
+   "accepted": true,
+   "tier": "Routine (tissue-type label)",
+   "heatmap_check": "weak",
+   "outline": false,
+   "nuclei": 22,
+   "fhir_valid": true,
+   "source": "internal"
+  },
+  {
+   "case": "gastric-02",
+   "organ": "gastric",
+   "finding": "Tumour epithelium",
+   "category": "malignant",
+   "p": 0.6003532409667969,
+   "accepted": false,
+   "tier": "Human review required \u2014 AI result not accepted",
+   "heatmap_check": "consistent",
+   "outline": false,
+   "nuclei": 65,
+   "fhir_valid": true,
+   "source": "internal"
+  },
+  {
+   "case": "kidney-01",
+   "organ": "kidney",
+   "finding": "Renal mass",
+   "category": "abnormal",
+   "p": 0.9363037347793579,
+   "accepted": true,
+   "tier": "Specialist review",
+   "heatmap_check": "consistent",
+   "outline": false,
+   "nuclei": null,
+   "fhir_valid": true,
+   "source": "internal"
+  },
+  {
+   "case": "kidney-02",
+   "organ": "kidney",
+   "finding": "No renal mass on this slice",
+   "category": "normal",
+   "p": 0.8696340918540955,
+   "accepted": false,
+   "tier": "Human review required \u2014 AI result not accepted",
+   "heatmap_check": "consistent",
+   "outline": false,
+   "nuclei": null,
+   "fhir_valid": true,
+   "source": "internal"
+  },
+  {
+   "case": "lung-01",
+   "organ": "lung",
+   "finding": "Lung carcinoma pattern",
+   "category": "malignant",
+   "p": 0.9997032284736633,
+   "accepted": true,
+   "tier": "Priority specialist review",
+   "heatmap_check": "inconclusive",
+   "outline": false,
+   "nuclei": 56,
+   "fhir_valid": true,
+   "source": "internal"
+  },
+  {
+   "case": "lung-02",
+   "organ": "lung",
+   "finding": "Lung carcinoma pattern",
+   "category": "malignant",
+   "p": 0.9991495609283447,
+   "accepted": false,
+   "tier": "Human review required \u2014 AI result not accepted",
+   "heatmap_check": "consistent",
+   "outline": false,
+   "nuclei": 482,
+   "fhir_valid": true,
+   "source": "lunghist700"
+  },
+  {
+   "case": "lymphoma-01",
+   "organ": "lymphoma",
+   "finding": "CLL / small lymphocytic lymphoma pattern",
+   "category": "malignant",
+   "p": 0.9999996423721313,
+   "accepted": true,
+   "tier": "Priority specialist review",
+   "heatmap_check": "inconclusive",
+   "outline": false,
+   "nuclei": 0,
+   "fhir_valid": true,
+   "source": "internal"
+  },
+  {
+   "case": "lymphoma-02",
+   "organ": "lymphoma",
+   "finding": "CLL / small lymphocytic lymphoma pattern",
+   "category": "malignant",
+   "p": 0.9999995231628418,
+   "accepted": true,
+   "tier": "Priority specialist review",
+   "heatmap_check": "inconclusive",
+   "outline": false,
+   "nuclei": 0,
+   "fhir_valid": true,
+   "source": "internal"
+  },
+  {
+   "case": "oral-01",
+   "organ": "oral",
+   "finding": "Oral squamous cell carcinoma pattern",
+   "category": "malignant",
+   "p": 0.9961258769035339,
+   "accepted": true,
+   "tier": "Priority specialist review",
+   "heatmap_check": "inconclusive",
+   "outline": false,
+   "nuclei": 33,
+   "fhir_valid": true,
+   "source": "internal"
+  },
+  {
+   "case": "oral-02",
+   "organ": "oral",
+   "finding": "Oral squamous cell carcinoma pattern",
+   "category": "malignant",
+   "p": 0.9891096353530884,
+   "accepted": false,
+   "tier": "Human review required \u2014 AI result not accepted",
+   "heatmap_check": "inconclusive",
+   "outline": false,
+   "nuclei": 44,
+   "fhir_valid": true,
+   "source": "internal"
+  },
+  {
+   "case": "ovarian-01",
+   "organ": "ovarian",
+   "finding": "Clear cell carcinoma pattern",
+   "category": "malignant",
+   "p": 0.9949236512184143,
+   "accepted": true,
+   "tier": "Priority specialist review",
+   "heatmap_check": "weak",
+   "outline": false,
+   "nuclei": 6,
+   "fhir_valid": true,
+   "source": "internal"
+  },
+  {
+   "case": "ovarian-02",
+   "organ": "ovarian",
+   "finding": "Mucinous carcinoma pattern",
+   "category": "malignant",
+   "p": 0.9864010214805603,
+   "accepted": true,
+   "tier": "Priority specialist review",
+   "heatmap_check": "weak",
+   "outline": false,
+   "nuclei": 0,
+   "fhir_valid": true,
+   "source": "internal"
+  },
+  {
+   "case": "pancreatic-01",
+   "organ": "pancreatic",
+   "finding": "Pancreatic tumour pattern",
+   "category": "malignant",
+   "p": 0.8439584970474243,
+   "accepted": true,
+   "tier": "Priority specialist review",
+   "heatmap_check": "consistent",
+   "outline": false,
+   "nuclei": null,
+   "fhir_valid": true,
+   "source": "msd_task07"
+  },
+  {
+   "case": "pancreatic-02",
+   "organ": "pancreatic",
+   "finding": "Pancreatic tumour pattern",
+   "category": "malignant",
+   "p": 0.5412861704826355,
+   "accepted": false,
+   "tier": "Human review required \u2014 AI result not accepted",
+   "heatmap_check": "consistent",
+   "outline": false,
+   "nuclei": null,
+   "fhir_valid": true,
+   "source": "msd_task07"
+  },
+  {
+   "case": "skin-01",
+   "organ": "skin",
+   "finding": "Squamous cell carcinoma pattern",
+   "category": "malignant",
+   "p": 0.9784036874771118,
+   "accepted": true,
+   "tier": "Priority specialist review",
+   "heatmap_check": "weak",
+   "outline": true,
+   "nuclei": null,
+   "fhir_valid": true,
+   "source": "internal"
+  },
+  {
+   "case": "skin-02",
+   "organ": "skin",
+   "finding": "Actinic keratosis pattern",
+   "category": "abnormal",
+   "p": 0.9583538174629211,
+   "accepted": true,
+   "tier": "Specialist review",
+   "heatmap_check": "inconclusive",
+   "outline": true,
+   "nuclei": null,
+   "fhir_valid": true,
+   "source": "internal"
+  },
+  {
+   "case": "thyroid-01",
+   "organ": "thyroid",
+   "finding": "Suspicious thyroid nodule pattern",
+   "category": "malignant",
+   "p": 0.781576931476593,
+   "accepted": true,
+   "tier": "Priority specialist review",
+   "heatmap_check": "consistent",
+   "outline": true,
+   "nuclei": null,
+   "fhir_valid": true,
+   "source": "internal"
+  },
+  {
+   "case": "thyroid-02",
+   "organ": "thyroid",
+   "finding": "Suspicious thyroid nodule pattern",
+   "category": "malignant",
+   "p": 0.5876132249832153,
+   "accepted": false,
+   "tier": "Human review required \u2014 AI result not accepted",
+   "heatmap_check": "consistent",
+   "outline": true,
+   "nuclei": null,
+   "fhir_valid": true,
+   "source": "internal"
+  }
+ ],
+ "eval_pooled": {
+  "review_rate": 0.2559652928416486,
+  "acc_all": 0.8731019522776573,
+  "silent_error": 0.04121475054229935,
+  "set_coverage": 0.8796095444685467
+ }
+}

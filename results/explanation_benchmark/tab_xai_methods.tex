@@ -1,0 +1,14 @@
+\begin{tabular}{@{}lccccccr@{}}
+\toprule
+Method & $\Delta$Del.$\uparrow$ & $\Delta$Ins.$\uparrow$ & \#Del. & \#Ins. & \#Both & Sanity $|\rho|\downarrow$ & ms/img \\
+\midrule
+Grad-CAM & +0.093 & +0.070 & 11/16 & 11/16 & 7/16 & 0.16 & 6 \\
+Integrated Gradients & +0.107 & +0.047 & 14/16 & 7/16 & 6/16 & 0.89 & 447 \\
+RISE & +0.094 & +0.059 & 10/16 & 10/16 & 6/16 & 0.80 & 1915 \\
+Score-CAM & +0.083 & +0.070 & 9/16 & 9/16 & 4/16 & 0.29 & 154 \\
+Grad-CAM++ & +0.065 & +0.053 & 8/16 & 10/16 & 4/16 & 0.16 & 6 \\
+EigenCAM & +0.052 & +0.048 & 7/16 & 6/16 & 1/16 & 0.25 & 6 \\
+Grad-CAM++ (thesis code) & +0.042 & +0.032 & 6/16 & 6/16 & 0/16 & 0.17 & 6 \\
+LayerCAM (stage 3) & +0.062 & -0.001 & 9/16 & 4/16 & 0/16 & 0.41 & 6 \\
+\bottomrule
+\end{tabular}
